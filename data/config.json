@@ -1,0 +1,95 @@
+{
+  "updated": "2026-07-06",
+  "influencers": {
+    "us": [
+      { "handle": "@koreanskincarequeen", "niche": "K-뷰티 루틴", "platform": "instagram", "followers": "82K", "avg_likes": "9,400", "engagement": 12.2, "contact": true },
+      { "handle": "@glowwithgrace_us", "niche": "클린뷰티", "platform": "tiktok", "followers": "210K", "avg_likes": "18,200", "engagement": 9.1, "contact": true },
+      { "handle": "@kbeautyobsessed", "niche": "K-뷰티 하울", "platform": "tiktok", "followers": "540K", "avg_likes": "31,000", "engagement": 5.9, "contact": false },
+      { "handle": "@seoulbeautytips", "niche": "한국 뷰티 라이프", "platform": "instagram", "followers": "128K", "avg_likes": "6,800", "engagement": 5.6, "contact": false },
+      { "handle": "@asianskincarediaries", "niche": "스킨케어 비교", "platform": "youtube", "followers": "380K", "avg_likes": "14,200", "engagement": 3.9, "contact": false }
+    ],
+    "eu": [
+      { "handle": "@kbeauty.london", "niche": "K-뷰티 · 영국", "platform": "instagram", "followers": "44K", "avg_likes": "4,800", "engagement": 11.8, "contact": true },
+      { "handle": "@skinosophy_eu", "niche": "성분분석 · 독일", "platform": "instagram", "followers": "91K", "avg_likes": "7,200", "engagement": 8.5, "contact": true },
+      { "handle": "@frenchgirlkbeauty", "niche": "K-뷰티 × 프렌치", "platform": "tiktok", "followers": "167K", "avg_likes": "9,100", "engagement": 5.7, "contact": false },
+      { "handle": "@nordic.kbeauty", "niche": "북유럽 미니멀", "platform": "instagram", "followers": "58K", "avg_likes": "2,900", "engagement": 5.4, "contact": false },
+      { "handle": "@koreabeautyuk", "niche": "K-뷰티 하울", "platform": "youtube", "followers": "290K", "avg_likes": "8,700", "engagement": 3.1, "contact": false }
+    ],
+    "me": [
+      { "handle": "@halal.beauty.ae", "niche": "할랄 뷰티 · UAE", "platform": "instagram", "followers": "61K", "avg_likes": "7,100", "engagement": 12.6, "contact": true },
+      { "handle": "@koreanbeauty.arabia", "niche": "아랍어 리뷰", "platform": "instagram", "followers": "112K", "avg_likes": "9,800", "engagement": 9.4, "contact": true },
+      { "handle": "@glow.dubai", "niche": "럭셔리 뷰티", "platform": "instagram", "followers": "340K", "avg_likes": "16,200", "engagement": 5.0, "contact": false },
+      { "handle": "@skincarewithnoor", "niche": "스킨케어 · 쿠웨이트", "platform": "tiktok", "followers": "78K", "avg_likes": "3,400", "engagement": 4.7, "contact": false },
+      { "handle": "@kbeauty.khaleeji", "niche": "걸프 패션", "platform": "instagram", "followers": "195K", "avg_likes": "5,900", "engagement": 3.2, "contact": false }
+    ],
+    "sea": [
+      { "handle": "@romand.thailand", "niche": "K-뷰티 · 태국", "platform": "tiktok", "followers": "95K", "avg_likes": "8,200", "engagement": 8.6, "contact": true },
+      { "handle": "@kbeauty.vietnam", "niche": "K-뷰티 · 베트남", "platform": "instagram", "followers": "67K", "avg_likes": "5,100", "engagement": 7.6, "contact": false }
+    ]
+  },
+  "gap_brands": {
+    "us": [
+      { "brand": "Skin1004", "search": "\"where to buy skin1004 us\" 월 4.1K", "reason": "글로벌 공식몰 없음" },
+      { "brand": "Round Lab", "search": "\"round lab usa\" 월 2.8K", "reason": "아마존 품절" },
+      { "brand": "Isntree", "search": "\"isntree where to buy\" 월 1.9K", "reason": "해외 유통 제한" }
+    ],
+    "eu": [
+      { "brand": "Anua", "search": "\"anua uk\" 월 3.2K", "reason": "유럽 공식 유통 없음" },
+      { "brand": "Round Lab", "search": "\"round lab europe\" 월 1.7K", "reason": "직구만 가능" },
+      { "brand": "Mixsoon", "search": "\"mixsoon uk\" 월 980", "reason": "신흥 수요" }
+    ],
+    "me": [
+      { "brand": "Tamburins", "search": "\"tamburins uae\" 월 1.4K", "reason": "중동 유통 전무" },
+      { "brand": "Anua", "search": "\"anua saudi\" 월 920", "reason": "직구만 가능" },
+      { "brand": "Skin1004", "search": "\"skin1004 middle east\" 월 670", "reason": "미진출" }
+    ],
+    "sea": [
+      { "brand": "Romand", "search": "\"romand thailand\" 월 6.8K", "reason": "현지 공식몰 없음" },
+      { "brand": "Beauty of Joseon", "search": "\"beauty of joseon malaysia\" 월 3.4K", "reason": "품절 상태" }
+    ]
+  },
+  "special_metrics": {
+    "us": [
+      { "name": "korean skincare", "value": "월 8.3K", "status": "급증" },
+      { "name": "where to buy anua", "value": "월 3.2K", "status": "급증" },
+      { "name": "skin1004 us", "value": "월 4.1K", "status": "상승" }
+    ],
+    "eu": [
+      { "name": "Purito", "value": "비건 언급 61%", "status": "인증 강점" },
+      { "name": "Isntree", "value": "클린 성분 48%", "status": "인증 강점" },
+      { "name": "Cosrx", "value": "클린 언급 22%", "status": "주의" }
+    ],
+    "me": [
+      { "name": "Laneige", "value": "할랄 ✅ SFDA ✅", "status": "인증 완료" },
+      { "name": "Innisfree", "value": "할랄 ⚠️ SFDA ⚠️", "status": "일부 인증" },
+      { "name": "Sulwhasoo", "value": "할랄 ❌ SFDA ❌", "status": "미인증 주의" },
+      { "name": "Tamburins", "value": "할랄 ❌ SFDA 🔍", "status": "검토 중" }
+    ],
+    "sea": [
+      { "name": "Romand", "value": "셀럽 연동 8.2K · 아이브 협업", "status": "셀럽 강점" },
+      { "name": "Etude House", "value": "셀럽 연동 6.1K · 뉴진스 협업", "status": "셀럽 강점" }
+    ]
+  },
+  "region_brands": {
+    "us": [
+      { "name": "Anua", "change": "+38%" },
+      { "name": "Beauty of Joseon", "change": "+29%" },
+      { "name": "Cosrx", "change": "+22%" }
+    ],
+    "eu": [
+      { "name": "Skin1004", "change": "+44%" },
+      { "name": "Purito", "change": "+31%" },
+      { "name": "Isntree", "change": "+27%" }
+    ],
+    "me": [
+      { "name": "Tamburins", "change": "+41%" },
+      { "name": "Sulwhasoo", "change": "+33%" },
+      { "name": "History of Whoo", "change": "+28%" }
+    ],
+    "sea": [
+      { "name": "Romand", "change": "+52%" },
+      { "name": "Etude House", "change": "+38%" },
+      { "name": "Innisfree", "change": "+29%" }
+    ]
+  }
+}
