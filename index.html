@@ -383,9 +383,10 @@ function renderRegions(){
     const inf=(configData.influencers||{})[r.key]||[];
     const gap=(configData.gap_brands||{})[r.key]||[];
     const special=(configData.special_metrics||{})[r.key]||[];
-    const rBrands=(configData.region_brands||{})[r.key]||[];
+    // region_brands는 latest.json(자동수집) 우선, 없으면 config.json 사용
+    const rBrands=(latestData?.region_brands||{})[r.key]||(configData.region_brands||{})[r.key]||[];
     const maxEng=Math.max(...inf.map(i=>i.engagement),1);
-    const brandRows=rBrands.map(b=>`<div class="box-row"><span class="brand-name">${b.name}</span><span class="brand-score">${b.change}</span></div>`).join('')||'<div class="box-row" style="color:#bbb;font-size:12px;">데이터 없음</div>';
+    const brandRows=rBrands.map(b=>`<div class="box-row"><span class="brand-name">${b.name}</span><span class="brand-score">${b.change||('▲ '+b.score)}</span></div>`).join('')||'<div class="box-row" style="color:#bbb;font-size:12px;">수집 데이터 분석 중</div>';
     const gapRows=gap.map(g=>`<div class="gap-row"><div class="gap-brand">${g.brand}</div><div class="gap-desc">${g.search} — ${g.reason}</div><span class="gap-badge">기회</span></div>`).join('');
     const specialRows=special.map(s=>`<div class="special-row"><span class="special-name">${s.name}</span><span class="special-val">${s.value}</span><span class="special-tag ${s.status.includes('완료')||s.status.includes('강점')||s.status.includes('급증')?'tag-high':s.status.includes('일부')||s.status.includes('상승')||s.status.includes('보통')?'tag-mid':'tag-low'}">${s.status}</span></div>`).join('');
     const infRows=inf.map((inf,i)=>{
