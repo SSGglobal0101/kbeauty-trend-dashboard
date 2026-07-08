@@ -30,8 +30,8 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
 .metric-label { font-size: 11px; color: #999; margin-bottom: 4px; display: flex; align-items: center; gap: 4px; }
 .metric-val { font-size: 24px; font-weight: 600; color: #1a1a1a; line-height: 1; }
 .metric-sub { font-size: 10px; color: #bbb; margin-top: 3px; }
-.tooltip-icon { width: 14px; height: 14px; border-radius: 50%; background: #e8e8e4; color: #888; font-size: 9px; display: inline-flex; align-items: center; justify-content: center; cursor: help; position: relative; flex-shrink: 0; }
-.tooltip-icon:hover::after { content: attr(data-tip); position: absolute; bottom: 120%; left: 50%; transform: translateX(-50%); background: #1a1a1a; color: white; font-size: 11px; padding: 6px 10px; border-radius: 6px; white-space: nowrap; z-index: 999; min-width: 200px; line-height: 1.5; font-weight: 400; }
+.tip { width: 14px; height: 14px; border-radius: 50%; background: #e8e8e4; color: #888; font-size: 9px; display: inline-flex; align-items: center; justify-content: center; cursor: help; position: relative; flex-shrink: 0; }
+.tip:hover::after { content: attr(data-tip); position: absolute; bottom: 120%; left: 50%; transform: translateX(-50%); background: #1a1a1a; color: white; font-size: 11px; padding: 6px 10px; border-radius: 6px; white-space: nowrap; z-index: 999; min-width: 200px; line-height: 1.5; font-weight: 400; pointer-events: none; }
 .platform-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px, 1fr)); gap: 8px; }
 .platform-card { background: white; border: 1px solid #e8e8e4; border-radius: 10px; padding: 12px 14px; }
 .platform-name { font-size: 13px; font-weight: 500; margin-bottom: 8px; }
@@ -42,8 +42,8 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
 .tag-rising { background: #e8f5e9; color: #27ae60; }
 .tag-new { background: #ede7f6; color: #5e35b1; }
 .tag-amazon { background: #fff8e1; color: #f57f17; }
-.platform-sub { font-size: 10px; color: #bbb; margin-top: 8px; padding-top: 8px; border-top: 1px solid #f0f0ec; }
 .platform-empty { font-size: 11px; color: #ccc; font-style: italic; }
+.platform-sub { font-size: 10px; color: #bbb; margin-top: 8px; padding-top: 8px; border-top: 1px solid #f0f0ec; }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .box { background: white; border: 1px solid #e8e8e4; border-radius: 10px; overflow: hidden; }
 .box-header { padding: 10px 14px; border-bottom: 1px solid #f0f0ec; font-size: 12px; font-weight: 500; color: #888; }
@@ -51,7 +51,6 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
 .box-row:last-child { border-bottom: none; }
 .brand-name { font-weight: 500; text-transform: capitalize; }
 .brand-score { color: #27ae60; font-weight: 500; font-size: 12px; }
-.brand-steady { color: #3b6d11; font-size: 11px; }
 .heatmap-box { background: white; border: 1px solid #e8e8e4; border-radius: 10px; padding: 14px 16px; }
 .tl-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
 .tl-row:last-child { margin-bottom: 0; }
@@ -98,16 +97,6 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
 .gap-brand { font-weight: 500; width: 90px; flex-shrink: 0; }
 .gap-desc { color: #888; flex: 1; font-size: 11px; }
 .gap-badge { font-size: 10px; padding: 2px 8px; border-radius: 20px; background: #e8f5e9; color: #27ae60; white-space: nowrap; }
-.special-box { background: white; border: 1px solid #e8e8e4; border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
-.special-header { padding: 9px 14px; border-bottom: 1px solid #f0f0ec; font-size: 12px; font-weight: 500; color: #888; }
-.special-row { display: flex; align-items: center; gap: 10px; padding: 8px 14px; border-bottom: 1px solid #f7f7f5; font-size: 12px; }
-.special-row:last-child { border-bottom: none; }
-.special-name { font-weight: 500; flex: 1; }
-.special-val { color: #888; font-size: 11px; }
-.special-tag { font-size: 10px; padding: 2px 8px; border-radius: 20px; white-space: nowrap; }
-.tag-high { background: #fdecea; color: #c0392b; }
-.tag-mid { background: #fff8e1; color: #f57f17; }
-.tag-low { background: #e8f5e9; color: #27ae60; }
 .inf-table { width: 100%; background: white; border: 1px solid #e8e8e4; border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
 .inf-header-row { display: grid; grid-template-columns: 24px 1fr 64px 64px 80px; padding: 8px 14px; background: #f7f7f5; border-bottom: 1px solid #e8e8e4; font-size: 10px; font-weight: 600; color: #999; text-transform: uppercase; }
 .inf-data-row { display: grid; grid-template-columns: 24px 1fr 64px 64px 80px; padding: 9px 14px; border-bottom: 1px solid #f7f7f5; align-items: center; }
@@ -126,11 +115,7 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
 .chip { font-size: 10px; padding: 2px 7px; border-radius: 20px; display: inline-block; margin-top: 3px; }
 .chip-contact { background: #e8f5e9; color: #27ae60; }
 .chip-watch { background: #fff8e1; color: #f57f17; }
-.action-box { background: #f7f7f5; border-radius: 10px; padding: 12px 14px; margin-bottom: 16px; }
-.action-row { display: flex; gap: 8px; margin-bottom: 6px; font-size: 12px; line-height: 1.5; }
-.action-row:last-child { margin-bottom: 0; }
-.action-num { color: #bbb; flex-shrink: 0; }
-.atag { font-size: 10px; padding: 1px 6px; border-radius: 3px; background: white; border: 1px solid #e8e8e4; color: #888; margin-left: 4px; }
+.no-data { color: #bbb; font-size: 12px; padding: 12px 14px; }
 .cal-search-wrap { display: flex; gap: 8px; margin-bottom: 6px; }
 .cal-input { flex: 1; padding: 9px 12px; font-size: 13px; border: 1px solid #e8e8e4; border-radius: 8px; background: white; outline: none; }
 .cal-input:focus { border-color: #1a1a1a; }
@@ -199,6 +184,7 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
   <button class="nav-btn" onclick="switchPage('calendar',event)">📅 리포트 캘린더</button>
   <button class="nav-btn" onclick="switchPage('search',event)">🔍 키워드 검색</button>
 </div>
+
 <div id="page-dashboard" class="page active">
   <div class="loading" id="dashLoading">데이터 로딩 중...</div>
   <div id="dashContent" style="display:none;">
@@ -241,12 +227,13 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
     <div id="rpanel-sea" class="rpanel"></div>
   </div>
 </div>
+
 <div id="page-calendar" class="page">
   <div class="cal-search-wrap">
-    <input class="cal-input" id="dateInput" type="text" placeholder="날짜 입력 — 예: 5/28 · 528 · 2026-05-28" maxlength="20"/>
+    <input class="cal-input" id="dateInput" type="text" placeholder="날짜 입력 — 예: 7/8 · 708 · 2026-07-08" maxlength="20"/>
     <button class="cal-btn" onclick="searchDate()">검색</button>
   </div>
-  <div class="cal-hint">※ 형식: 2026-05-28 · 5/28 · 528 모두 가능 · 엔터키로 검색</div>
+  <div class="cal-hint">※ 형식: 2026-07-08 · 7/8 · 708 모두 가능 · 엔터키로 검색</div>
   <div class="cal-nav">
     <button class="cal-nav-btn" onclick="changeMonth(-1)">← 이전</button>
     <div class="cal-nav-title" id="calTitle"></div>
@@ -255,23 +242,23 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
   <div class="cal-grid" id="calGrid"></div>
   <div class="cal-preview" id="calPreview"><div class="empty-state">날짜를 선택하면 리포트 요약이 표시돼요</div></div>
 </div>
+
 <div id="page-search" class="page">
   <div class="ks-input-row">
     <input class="ks-input" id="ksInput" type="text" placeholder="브랜드명, 성분, 인플루언서, 키워드 검색..."/>
     <button class="ks-btn" onclick="runSearch()">검색</button>
   </div>
-  <div class="ks-hint">※ 예: Anua · Centella · glass skin · 구매처 · @koreanskincarequeen</div>
+  <div class="ks-hint">※ 예: Anua · Centella · glass skin · 구매처 · 인플루언서</div>
   <div style="font-size:11px;color:#bbb;margin-bottom:8px;">추천 검색어</div>
   <div class="ks-suggestions">
     <span class="ks-suggestion" onclick="quickSearch('Anua')">Anua</span>
     <span class="ks-suggestion" onclick="quickSearch('Cosrx')">Cosrx</span>
     <span class="ks-suggestion" onclick="quickSearch('Centella')">Centella</span>
     <span class="ks-suggestion" onclick="quickSearch('Tamburins')">Tamburins</span>
-    <span class="ks-suggestion" onclick="quickSearch('glass skin')">Glass Skin</span>
+    <span class="ks-suggestion" onclick="quickSearch('niacinamide')">Niacinamide</span>
     <span class="ks-suggestion" onclick="quickSearch('구매처')">구매처 공백</span>
-    <span class="ks-suggestion" onclick="quickSearch('할랄')">할랄</span>
-    <span class="ks-suggestion" onclick="quickSearch('Niacinamide')">Niacinamide</span>
     <span class="ks-suggestion" onclick="quickSearch('인플루언서')">인플루언서</span>
+    <span class="ks-suggestion" onclick="quickSearch('prime day')">Prime Day</span>
   </div>
   <div class="ks-filters">
     <span class="ks-filter active" onclick="setFilter('all',this)">전체</span>
@@ -283,29 +270,54 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
   </div>
   <div id="ksResults"></div>
 </div>
+
 <script>
-let latestData=null,configData=null,reportCache={},activeFilter='all',calYear=new Date().getFullYear(),calMonth=new Date().getMonth(),isViewingLatest=true,searchIndex=[];
-const platformSearchURL={instagram:kw=>`https://www.instagram.com/explore/tags/${encodeURIComponent(kw.replace(/[#\s]/g,''))}`,tiktok:kw=>`https://www.tiktok.com/search?q=${encodeURIComponent(kw)}`,youtube:kw=>`https://www.youtube.com/results?search_query=${encodeURIComponent(kw)}`,x:kw=>`https://x.com/search?q=${encodeURIComponent(kw)}`,google_trends:kw=>`https://trends.google.com/trends/explore?q=${encodeURIComponent(kw)}`,amazon:kw=>`https://www.amazon.com/s?k=${encodeURIComponent(kw)}`};
-const platformProfileURL={instagram:h=>`https://www.instagram.com/${h.replace('@','')}`,tiktok:h=>`https://www.tiktok.com/@${h.replace('@','')}`,youtube:h=>`https://www.youtube.com/@${h.replace('@','')}`,x:h=>`https://x.com/${h.replace('@','')}`};
+let latestData=null,reportCache={},activeFilter='all',calYear=new Date().getFullYear(),calMonth=new Date().getMonth(),isViewingLatest=true,searchIndex=[];
+
+const platformSearchURL={
+  instagram:kw=>`https://www.instagram.com/explore/tags/${encodeURIComponent(kw.replace(/[#\s]/g,''))}`,
+  tiktok:kw=>`https://www.tiktok.com/search?q=${encodeURIComponent(kw)}`,
+  youtube:kw=>`https://www.youtube.com/results?search_query=${encodeURIComponent(kw)}`,
+  x:kw=>`https://x.com/search?q=${encodeURIComponent(kw)}`,
+  google_trends:kw=>`https://trends.google.com/trends/explore?q=${encodeURIComponent(kw)}`,
+  amazon:kw=>`https://www.amazon.com/s?k=${encodeURIComponent(kw)}`
+};
+const platformProfileURL={
+  instagram:h=>`https://www.instagram.com/${h.replace('@','')}`,
+  tiktok:h=>`https://www.tiktok.com/@${h.replace('@','')}`,
+  youtube:h=>`https://www.youtube.com/@${h.replace('@','')}`,
+  x:h=>`https://x.com/${h.replace('@','')}`
+};
 
 async function init(){
   try{
-    const[dataRes,configRes]=await Promise.all([fetch('data/latest.json?t='+Date.now()),fetch('data/config.json?t='+Date.now())]);
-    latestData=await dataRes.json();
-    configData=await configRes.json();
+    const res=await fetch('data/latest.json?t='+Date.now());
+    latestData=await res.json();
     renderDashboard(latestData);
-    buildSearchIndex();
-  }catch(e){document.getElementById('dashLoading').textContent='데이터 로드 실패 — 잠시 후 새로고침해주세요';}
+    buildSearchIndex(latestData);
+  }catch(e){
+    document.getElementById('dashLoading').textContent='데이터 로드 실패 — 잠시 후 새로고침해주세요';
+  }
 }
 
 async function loadReport(date){
   if(reportCache[date])return reportCache[date];
-  try{const res=await fetch(`data/${date}.json?t=`+Date.now());if(!res.ok)return null;const data=await res.json();reportCache[date]=data;return data;}
-  catch(e){return null;}
+  try{
+    const res=await fetch(`data/${date}.json?t=`+Date.now());
+    if(!res.ok)return null;
+    const data=await res.json();
+    reportCache[date]=data;
+    return data;
+  }catch(e){return null;}
 }
 
 function goLatest(event){
-  if(event){document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));event.target.closest('.nav-btn').classList.add('active');document.getElementById('page-dashboard').classList.add('active');}
+  if(event){
+    document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+    event.target.closest('.nav-btn').classList.add('active');
+    document.getElementById('page-dashboard').classList.add('active');
+  }
   if(latestData){isViewingLatest=true;renderDashboard(latestData);}
 }
 
@@ -315,17 +327,24 @@ function renderDashboard(data){
   document.getElementById('headerDate').textContent=data.date+' · 자동 업데이트';
   const d=new Date(data.date);
   document.getElementById('reportDateVal').textContent=`${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일`;
-  if(isViewingLatest){document.getElementById('backBtn').classList.remove('visible');document.getElementById('liveBadge').style.display='inline-block';}
-  else{document.getElementById('backBtn').classList.add('visible');document.getElementById('liveBadge').style.display='none';}
+  if(isViewingLatest){
+    document.getElementById('backBtn').classList.remove('visible');
+    document.getElementById('liveBadge').style.display='inline-block';
+  }else{
+    document.getElementById('backBtn').classList.add('visible');
+    document.getElementById('liveBadge').style.display='none';
+  }
 
+  // 지표
   const s=data.summary,wtb=s.where_to_buy_search||0;
   document.getElementById('metricGrid').innerHTML=`
-    <div class="metric"><div class="metric-label">수집 데이터 수 <span class="tooltip-icon" data-tip="6개 플랫폼에서 수집된 게시물·영상·상품·트윗의 총 개수">?</span></div><div class="metric-val">${s.total_keywords}</div><div class="metric-sub">${s.platforms}개 플랫폼</div></div>
-    <div class="metric"><div class="metric-label">"where to buy" <span class="tooltip-icon" data-tip="Google Trends의 'where to buy korean skincare' 7일 평균 관심도 수치. 높을수록 구매 의도 높음">?</span></div><div class="metric-val">${wtb>=1000?(wtb/1000).toFixed(1)+'K':wtb}</div><div class="metric-sub">구글 검색 관심도</div></div>
-    <div class="metric"><div class="metric-label">TOP 브랜드 <span class="tooltip-icon" data-tip="수집 데이터에서 브랜드명 언급 횟수를 좋아요·조회수·리뷰수로 가중치 집계한 수">?</span></div><div class="metric-val">${data.brands.length}</div><div class="metric-sub">이번주 집계</div></div>
-    <div class="metric"><div class="metric-label">바이럴 성분 <span class="tooltip-icon" data-tip="YouTube·X·Amazon에서 성분 키워드(centella·niacinamide 등) 언급 횟수 집계">?</span></div><div class="metric-val">${data.ingredients.length}</div><div class="metric-sub">급상승 중</div></div>
-    <div class="metric"><div class="metric-label">K-뷰티 언급 <span class="tooltip-icon" data-tip="수집 데이터 중 K-뷰티 관련 콘텐츠 추정치 (수집 데이터 수 × 0.8)">?</span></div><div class="metric-val">${Math.round(s.total_keywords*0.8)}+</div><div class="metric-sub">글로벌 기준</div></div>`;
+    <div class="metric"><div class="metric-label">수집 데이터 수 <span class="tip" data-tip="6개 플랫폼에서 수집된 게시물·영상·상품·트윗의 총 개수">?</span></div><div class="metric-val">${s.total_keywords}</div><div class="metric-sub">${s.platforms}개 플랫폼</div></div>
+    <div class="metric"><div class="metric-label">"where to buy" <span class="tip" data-tip="Google Trends의 'where to buy korean skincare' 7일 평균 관심도. 높을수록 구매 의도 높음">?</span></div><div class="metric-val">${wtb>=1000?(wtb/1000).toFixed(1)+'K':wtb||'-'}</div><div class="metric-sub">구글 검색 관심도</div></div>
+    <div class="metric"><div class="metric-label">TOP 브랜드 <span class="tip" data-tip="수집 데이터에서 브랜드명 언급 횟수를 좋아요·조회수·리뷰수로 가중치 집계">?</span></div><div class="metric-val">${data.brands.length}</div><div class="metric-sub">이번주 집계</div></div>
+    <div class="metric"><div class="metric-label">바이럴 성분 <span class="tip" data-tip="YouTube·X·Amazon 데이터에서 성분 키워드 언급 횟수 집계">?</span></div><div class="metric-val">${data.ingredients.length}</div><div class="metric-sub">급상승 중</div></div>
+    <div class="metric"><div class="metric-label">K-뷰티 언급 <span class="tip" data-tip="수집된 전체 데이터 중 K-뷰티 관련 콘텐츠 추정치">?</span></div><div class="metric-val">${Math.round(s.total_keywords*0.8)}+</div><div class="metric-sub">글로벌 기준</div></div>`;
 
+  // 플랫폼 키워드
   const p=data.platforms;
   const platforms=[
     {key:'instagram',name:'📸 Instagram',tags:(p.instagram?.top_hashtags||[]).map(t=>({text:'#'+t,kw:t,cls:'tag-hot'}))},
@@ -333,78 +352,105 @@ function renderDashboard(data){
     {key:'youtube',name:'▶️ YouTube',tags:(p.youtube?.top_keywords||[]).map(t=>({text:t,kw:t,cls:'tag-new'}))},
     {key:'x',name:'✖️ X',tags:(p.x?.top_keywords||[]).map(t=>({text:'#'+t.replace(/\s/g,''),kw:t,cls:'tag-rising'}))},
     {key:'google_trends',name:'🔍 Google Trends',tags:(p.google_trends?.keywords||[]).map(t=>({text:t,kw:t,cls:'tag-new'}))},
-    {key:'amazon',name:'📦 Amazon',tags:(p.amazon?.top_keywords||['korean skin care','snail mucin','cica cream','korean sunscreen']).map(t=>({text:t,kw:t,cls:'tag-amazon'})),sub:'리뷰 급증 — Cosrx · Anua · BoJ SPF'},
+    {key:'amazon',name:'📦 Amazon',tags:(p.amazon?.top_keywords||[]).map(t=>({text:t,kw:t,cls:'tag-amazon'})),sub:'리뷰 급증 — Cosrx · Anua · BoJ SPF'},
   ];
   document.getElementById('platformGrid').innerHTML=platforms.map(pl=>`
-    <div class="platform-card"><div class="platform-name">${pl.name}</div>
-    <div class="tag-list">${pl.tags.length>0?pl.tags.slice(0,5).map(t=>`<a class="tag ${t.cls}" href="${platformSearchURL[pl.key](t.kw)}" target="_blank">${t.text}</a>`).join(''):'<span class="platform-empty">수집 중...</span>'}</div>
-    ${pl.sub?`<div class="platform-sub">${pl.sub}</div>`:''}</div>`).join('');
+    <div class="platform-card">
+      <div class="platform-name">${pl.name}</div>
+      <div class="tag-list">${pl.tags.length>0?pl.tags.slice(0,5).map(t=>`<a class="tag ${t.cls}" href="${platformSearchURL[pl.key](t.kw)}" target="_blank">${t.text}</a>`).join(''):'<span class="platform-empty">수집 중...</span>'}</div>
+      ${pl.sub?`<div class="platform-sub">${pl.sub}</div>`:''}
+    </div>`).join('');
 
+  // 브랜드
   const half=Math.ceil(data.brands.length/2);
-  document.getElementById('brandRising').innerHTML=data.brands.slice(0,half).map((b,i)=>`<div class="box-row"><span class="brand-name">${i+1}. ${b.name}</span><span class="brand-score">▲ ${b.score}</span></div>`).join('')||'<div class="box-row" style="color:#bbb;font-size:12px;padding:12px;">수집 데이터 분석 중</div>';
-  document.getElementById('brandSteady').innerHTML=data.brands.slice(half).map((b,i)=>`<div class="box-row"><span class="brand-name">${i+half+1}. ${b.name}</span><span class="brand-steady">▲ ${b.score}</span></div>`).join('')||'<div class="box-row" style="color:#bbb;font-size:12px;padding:12px;">수집 데이터 분석 중</div>';
+  document.getElementById('brandRising').innerHTML=data.brands.slice(0,half).map((b,i)=>`
+    <div class="box-row"><span class="brand-name">${i+1}. ${b.name}</span><span class="brand-score">▲ ${b.score}</span></div>`).join('')
+    ||'<div class="no-data">수집 데이터 분석 중</div>';
+  document.getElementById('brandSteady').innerHTML=data.brands.slice(half).map((b,i)=>`
+    <div class="box-row"><span class="brand-name">${i+half+1}. ${b.name}</span><span class="brand-score">▲ ${b.score}</span></div>`).join('')
+    ||'<div class="no-data">수집 데이터 분석 중</div>';
 
-  const heatColors=['#f0f0ec','#b5d4f4','#378add','#0c447c','#d85a30'];
+  // 히트맵
+  const hC=['#f0f0ec','#b5d4f4','#378add','#0c447c','#d85a30'];
   const hP=[['#f0f0ec','#b5d4f4','#378add','#0c447c'],['#b5d4f4','#378add','#0c447c','#0c447c'],['#f0f0ec','#f0f0ec','#b5d4f4','#d85a30'],['#f0f0ec','#b5d4f4','#378add','#d85a30'],['#378add','#378add','#0c447c','#0c447c']];
   const hL=['8주↑','5주↑','급상승','신규','4주↑'],hLC=['#27ae60','#27ae60','#c0392b','#c0392b','#27ae60'];
   document.getElementById('heatmapBox').innerHTML=`
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px;">${['미미','낮음','보통','높음','급상승'].map((l,i)=>`<span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#888;"><span style="width:10px;height:10px;border-radius:2px;background:${heatColors[i]};display:inline-block;"></span>${l}</span>`).join('')}</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px;">${['미미','낮음','보통','높음','급상승'].map((l,i)=>`<span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#888;"><span style="width:10px;height:10px;border-radius:2px;background:${hC[i]};display:inline-block;"></span>${l}</span>`).join('')}</div>
     <div style="display:flex;gap:3px;padding-left:118px;margin-bottom:6px;">${['3주전','2주전','1주전','이번주'].map(w=>`<div style="flex:1;font-size:10px;color:#bbb;text-align:center;">${w}</div>`).join('')}</div>
     ${data.brands.slice(0,5).map((b,i)=>`<div class="tl-row"><div class="tl-name">${b.name}</div><div class="tl-bars">${(hP[i]||hP[0]).map(c=>`<div class="tl-bar" style="background:${c};"></div>`).join('')}</div><div class="tl-label" style="color:${hLC[i]||'#27ae60'};font-size:10px;font-weight:500;">${hL[i]||'상승'}</div></div>`).join('')}`;
 
-  const signals=data.signals||generateSignals();
-  document.getElementById('signalList').innerHTML=signals.map(s=>`<div class="signal-row"><span class="sig-badge ${s.type}">${s.badge}</span><div class="sig-text">${s.text}</div><div class="sig-dday">${s.dday}</div></div>`).join('');
+  // 시그널 — latest.json에서 읽기
+  const signals=data.signals||[];
+  document.getElementById('signalList').innerHTML=signals.length>0
+    ?signals.map(s=>`<div class="signal-row"><span class="sig-badge ${s.type}">${s.badge}</span><div class="sig-text">${s.text}</div><div class="sig-dday">${s.dday}</div></div>`).join('')
+    :'<div class="no-data">시그널 수집 중...</div>';
 
+  // 성분
   const maxIng=Math.max(...data.ingredients.map(i=>i.score),1);
   document.getElementById('ingGrid').innerHTML=data.ingredients.length>0
     ?data.ingredients.map(ing=>`<div class="ing-card"><div class="ing-name">${ing.name}</div><div class="ing-bar-wrap"><div class="ing-bar" style="width:${Math.round(ing.score/maxIng*100)}%"></div></div><div class="ing-stats"><span>${ing.score}</span><span style="color:#c0392b;font-weight:500;">+${Math.round(ing.score/maxIng*100)}%</span></div></div>`).join('')
-    :'<div style="color:#bbb;font-size:12px;padding:12px;">수집 데이터 분석 중</div>';
+    :'<div class="no-data">성분 데이터 수집 중...</div>';
 
-  if(configData)renderRegions();
+  // 권역 패널
+  renderRegions(data);
 }
 
-function generateSignals(){
-  const month=new Date().getMonth()+1,signals=[];
-  if(month===7){signals.push({type:'sig-season',badge:'시즌',text:'Amazon Prime Day 시즌 — K-뷰티 비교 검색 급증, 면세 가격 경쟁력 부각 기회',dday:'진행 중'});signals.push({type:'sig-season',badge:'시즌',text:'Summer Skincare — 선케어·수분 케어 수요 피크, 가벼운 제형 선호',dday:'7~8월'});}
-  else if(month===8)signals.push({type:'sig-season',badge:'시즌',text:'Back to School + 가을 스킨케어 전환 시즌',dday:'8~9월'});
-  else if(month>=11)signals.push({type:'sig-season',badge:'시즌',text:'Black Friday / Cyber Monday — 연중 최대 K-뷰티 구매 피크',dday:'준비 시작'});
-  signals.push({type:'sig-social',badge:'소셜',text:'Glass Skin 트렌드 지속 — 한국식 레이어링 루틴 글로벌 관심',dday:'지속 중'});
-  return signals;
-}
-
-function renderRegions(){
+function renderRegions(data){
   const regions=[
-    {key:'us',flag:'🇺🇸',title:'미주 — 미국 / 캐나다',sub:'TikTok 트렌드 진원지 · K-뷰티 최대 시장',priority:'1순위',cls:'pri-main',specialHeader:'🛒 미주 특수 지표 — "where to buy" 검색량'},
-    {key:'eu',flag:'🇬🇧',title:'유럽 — 영국 / 프랑스 / 독일',sub:'클린뷰티 민감 · EU 규제 인식 높음',priority:'1순위',cls:'pri-main',specialHeader:'🌿 유럽 특수 지표 — 클린뷰티 인증 비율'},
-    {key:'me',flag:'🌙',title:'중동 — UAE / 사우디 / 쿠웨이트',sub:'할랄 인증 필수 · 럭셔리 선호',priority:'1순위',cls:'pri-main',specialHeader:'🌙 중동 특수 지표 — 할랄 · SFDA 인증 현황'},
-    {key:'sea',flag:'🌏',title:'동남아 — 태국 / 베트남 / 말레이시아',sub:'K-팝 연동 강함 · 가성비 민감',priority:'관찰 중',cls:'pri-watch',specialHeader:'🎵 동남아 특수 지표 — K-팝 셀럽 연동'},
+    {key:'us',flag:'🇺🇸',title:'미주 — 미국 / 캐나다',sub:'TikTok 트렌드 진원지 · K-뷰티 최대 시장',priority:'1순위',cls:'pri-main'},
+    {key:'eu',flag:'🇬🇧',title:'유럽 — 영국 / 프랑스 / 독일',sub:'클린뷰티 민감 · EU 규제 인식 높음',priority:'1순위',cls:'pri-main'},
+    {key:'me',flag:'🌙',title:'중동 — UAE / 사우디 / 쿠웨이트',sub:'할랄 인증 중요 · 럭셔리 선호',priority:'1순위',cls:'pri-main'},
+    {key:'sea',flag:'🌏',title:'동남아 — 태국 / 베트남 / 말레이시아',sub:'K-팝 연동 강함 · 가성비 민감',priority:'관찰 중',cls:'pri-watch'},
   ];
+
   regions.forEach(r=>{
-    const inf=(configData.influencers||{})[r.key]||[];
-    const gap=(configData.gap_brands||{})[r.key]||[];
-    const special=(configData.special_metrics||{})[r.key]||[];
-    // region_brands는 latest.json(자동수집) 우선, 없으면 config.json 사용
-    const rBrands=(latestData?.region_brands||{})[r.key]||(configData.region_brands||{})[r.key]||[];
-    const maxEng=Math.max(...inf.map(i=>i.engagement),1);
-    const brandRows=rBrands.map(b=>`<div class="box-row"><span class="brand-name">${b.name}</span><span class="brand-score">${b.change||('▲ '+b.score)}</span></div>`).join('')||'<div class="box-row" style="color:#bbb;font-size:12px;">수집 데이터 분석 중</div>';
-    const gapRows=gap.map(g=>`<div class="gap-row"><div class="gap-brand">${g.brand}</div><div class="gap-desc">${g.search} — ${g.reason}</div><span class="gap-badge">기회</span></div>`).join('');
-    const specialRows=special.map(s=>`<div class="special-row"><span class="special-name">${s.name}</span><span class="special-val">${s.value}</span><span class="special-tag ${s.status.includes('완료')||s.status.includes('강점')||s.status.includes('급증')?'tag-high':s.status.includes('일부')||s.status.includes('상승')||s.status.includes('보통')?'tag-mid':'tag-low'}">${s.status}</span></div>`).join('');
-    const infRows=inf.map((inf,i)=>{
-      const rankCls=i===0?'gold':i===1?'silver':i===2?'bronze':'';
-      const profileUrl=platformProfileURL[inf.platform]?.(inf.handle)||'#';
-      const pct=Math.round(inf.engagement/maxEng*100);
-      return `<div class="inf-data-row"><div class="inf-rank ${rankCls}">${i+1}</div><div><a class="inf-handle" href="${profileUrl}" target="_blank">${inf.handle}</a><div class="inf-niche">${inf.niche} · ${inf.platform}</div></div><div class="inf-val">${inf.followers}</div><div class="inf-val">${inf.avg_likes}</div><div><div class="inf-eng">${inf.engagement}%</div><div class="eng-bar-wrap"><div class="eng-bar" style="width:${pct}%;${pct<50?'background:#3b82f6;':''}"></div></div><span class="chip ${inf.contact?'chip-contact':'chip-watch'}">${inf.contact?'컨택추천':'지켜보기'}</span></div></div>`;
-    }).join('');
+    // 모두 latest.json에서 읽기
+    const rBrands=(data.region_brands||{})[r.key]||[];
+    const gap=(data.gap_brands||{})[r.key]||[];
+    const inf=(data.influencers||{})[r.key]||[];
+    const maxEng=Math.max(...inf.map(i=>i.engagement||0),1);
+
+    const brandRows=rBrands.length>0
+      ?rBrands.map(b=>`<div class="box-row"><span class="brand-name">${b.name}</span><span class="brand-score">▲ ${b.score}</span></div>`).join('')
+      :'<div class="no-data">수집 중...</div>';
+
+    const gapRows=gap.length>0
+      ?gap.map(g=>`<div class="gap-row"><div class="gap-brand">${g.brand}</div><div class="gap-desc">${g.search} — ${g.reason}</div><span class="gap-badge">기회</span></div>`).join('')
+      :'<div class="no-data">수집 중...</div>';
+
+    const infRows=inf.length>0
+      ?inf.map((inf,i)=>{
+        const rankCls=i===0?'gold':i===1?'silver':i===2?'bronze':'';
+        const profileUrl=platformProfileURL[inf.platform]?.(inf.handle)||'#';
+        const pct=Math.round((inf.engagement||0)/maxEng*100);
+        return `<div class="inf-data-row">
+          <div class="inf-rank ${rankCls}">${i+1}</div>
+          <div><a class="inf-handle" href="${profileUrl}" target="_blank">${inf.handle}</a><div class="inf-niche">${inf.niche||'K-뷰티'} · ${inf.platform}</div></div>
+          <div class="inf-val">${inf.followers||'-'}</div>
+          <div class="inf-val">${inf.avg_likes||'-'}</div>
+          <div><div class="inf-eng">${inf.engagement||0}%</div>
+          <div class="eng-bar-wrap"><div class="eng-bar" style="width:${pct}%;${pct<50?'background:#3b82f6;':''}"></div></div>
+          <span class="chip ${inf.contact?'chip-contact':'chip-watch'}">${inf.contact?'컨택추천':'지켜보기'}</span></div>
+        </div>`;
+      }).join('')
+      :'<div class="no-data">인플루언서 수집 중...</div>';
+
     document.getElementById(`rpanel-${r.key}`).innerHTML=`
-      <div class="region-header"><div class="region-flag">${r.flag}</div><div><div class="region-title">${r.title}</div><div class="region-sub">${r.sub}</div></div><span class="region-priority ${r.cls}">${r.priority}</span></div>
-      <div class="two-col" style="margin-bottom:12px;">
-        <div class="box"><div class="box-header">뜨는 브랜드</div>${brandRows}</div>
-        <div class="special-box" style="margin:0;"><div class="special-header">${r.specialHeader}</div>${specialRows||'<div class="special-row"><span style="color:#bbb;font-size:12px;">데이터 없음</span></div>'}</div>
+      <div class="region-header">
+        <div class="region-flag">${r.flag}</div>
+        <div><div class="region-title">${r.title}</div><div class="region-sub">${r.sub}</div></div>
+        <span class="region-priority ${r.cls}">${r.priority}</span>
       </div>
-      ${gapRows?`<div class="gap-box"><div class="gap-header">🟢 구매처 공백 브랜드 — 수요 있는데 살 곳 없음</div>${gapRows}</div>`:''}
+      <div class="two-col" style="margin-bottom:12px;">
+        <div class="box"><div class="box-header">🔥 이번 주 뜨는 브랜드</div>${brandRows}</div>
+        <div class="gap-box" style="margin:0;border-radius:10px;">
+          <div class="gap-header">🟢 구매처 공백 브랜드</div>
+          ${gapRows}
+        </div>
+      </div>
       <div class="inf-table">
         <div class="inf-header-row"><div>#</div><div>인플루언서</div><div>팔로워</div><div>좋아요</div><div>인게이지먼트</div></div>
-        ${infRows||'<div style="padding:12px 14px;color:#bbb;font-size:12px;">인플루언서 데이터 없음</div>'}
+        ${infRows}
       </div>`;
   });
 }
@@ -483,14 +529,17 @@ function searchDate(){
 function changeMonth(dir){calMonth+=dir;if(calMonth>11){calMonth=0;calYear++;}if(calMonth<0){calMonth=11;calYear--;}document.getElementById('calPreview').innerHTML='<div class="empty-state">날짜를 선택하면 리포트 요약이 표시돼요</div>';renderCalendar();}
 document.getElementById('dateInput').addEventListener('keydown',e=>{if(e.key==='Enter')searchDate();});
 
-function buildSearchIndex(){
+function buildSearchIndex(data){
   searchIndex=[];
-  if(latestData?.brands)latestData.brands.forEach(b=>searchIndex.push({type:'brand',date:latestData.date,title:b.name,desc:`트렌드 스코어 ${b.score} · 실시간 수집`,tags:[b.name.toLowerCase(),'브랜드']}));
-  if(latestData?.ingredients)latestData.ingredients.forEach(i=>searchIndex.push({type:'ingredient',date:latestData.date,title:i.name,desc:`바이럴 스코어 ${i.score} · 실시간 수집`,tags:[i.name.toLowerCase(),'성분']}));
-  const signals=latestData?.signals||generateSignals();
-  signals.forEach(s=>searchIndex.push({type:'signal',date:latestData?.date||'',title:s.badge+' — '+s.text.substring(0,30),desc:s.text,tags:['시그널',s.badge.toLowerCase()]}));
-  if(configData?.gap_brands)Object.entries(configData.gap_brands).forEach(([region,brands])=>brands.forEach(b=>searchIndex.push({type:'gap',date:configData.updated||'',title:`${b.brand} — ${region.toUpperCase()} 공백`,desc:`${b.search} — ${b.reason}`,tags:['구매처','공백',b.brand.toLowerCase(),region]})));
-  if(configData?.influencers)Object.entries(configData.influencers).forEach(([region,infs])=>infs.forEach(i=>searchIndex.push({type:'influencer',date:configData.updated||'',title:i.handle,desc:`${i.niche} · ${i.platform} · 팔로워 ${i.followers} · 인게이지먼트 ${i.engagement}%`,tags:['인플루언서',i.handle.toLowerCase(),region,i.platform]})));
+  (data.brands||[]).forEach(b=>searchIndex.push({type:'brand',date:data.date,title:b.name,desc:`트렌드 스코어 ${b.score} · 실시간 수집`,tags:[b.name.toLowerCase(),'브랜드']}));
+  (data.ingredients||[]).forEach(i=>searchIndex.push({type:'ingredient',date:data.date,title:i.name,desc:`바이럴 스코어 ${i.score} · 실시간 수집`,tags:[i.name.toLowerCase(),'성분']}));
+  (data.signals||[]).forEach(s=>searchIndex.push({type:'signal',date:data.date,title:s.badge+' — '+s.text.substring(0,40),desc:s.text,tags:['시그널',s.badge.toLowerCase(),'시즌']}));
+  Object.entries(data.gap_brands||{}).forEach(([region,brands])=>
+    brands.forEach(b=>searchIndex.push({type:'gap',date:data.date,title:`${b.brand} — ${region.toUpperCase()} 공백`,desc:`${b.search} — ${b.reason}`,tags:['구매처','공백',b.brand.toLowerCase(),region]}))
+  );
+  Object.entries(data.influencers||{}).forEach(([region,infs])=>
+    infs.forEach(i=>searchIndex.push({type:'influencer',date:data.date,title:i.handle,desc:`${i.niche||'K-뷰티'} · ${i.platform} · 팔로워 ${i.followers} · 인게이지먼트 ${i.engagement}%`,tags:['인플루언서',i.handle.toLowerCase(),region,i.platform]}))
+  );
 }
 
 const typeStyles={brand:{bg:'#fdecea',color:'#c0392b',label:'브랜드'},ingredient:{bg:'#fff8e1',color:'#f57f17',label:'성분'},signal:{bg:'#e8f5e9',color:'#27ae60',label:'시그널'},gap:{bg:'#e8f5e9',color:'#1a6e45',label:'구매처 공백'},influencer:{bg:'#ede7f6',color:'#5e35b1',label:'인플루언서'}};
@@ -501,9 +550,17 @@ function runSearch(){
   const raw=document.getElementById('ksInput').value.trim().toLowerCase();
   const el=document.getElementById('ksResults');
   if(!raw){el.innerHTML='';return;}
-  let results=searchIndex.filter(item=>{const matchFilter=activeFilter==='all'||item.type===activeFilter;const matchQuery=item.tags.some(t=>t.includes(raw))||item.title.toLowerCase().includes(raw)||item.desc.toLowerCase().includes(raw);return matchFilter&&matchQuery;}).sort((a,b)=>b.date.localeCompare(a.date));
+  let results=searchIndex.filter(item=>{
+    const mf=activeFilter==='all'||item.type===activeFilter;
+    const mq=item.tags.some(t=>t.includes(raw))||item.title.toLowerCase().includes(raw)||item.desc.toLowerCase().includes(raw);
+    return mf&&mq;
+  }).sort((a,b)=>b.date.localeCompare(a.date));
   if(!results.length){el.innerHTML=`<div class="ks-empty">🔍 "<strong>${raw}</strong>" 검색 결과가 없어요</div>`;return;}
-  el.innerHTML=`<div style="font-size:12px;color:#888;margin-bottom:10px;"><strong>${results.length}개</strong> 결과 — "${raw}"</div>`+results.map(item=>{const s=typeStyles[item.type];const d=item.date?new Date(item.date):null;const dateStr=d?`${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일`:'';return `<div class="ks-card"><div class="ks-card-top"><span class="ks-card-type" style="background:${s.bg};color:${s.color};">${s.label}</span><span class="ks-card-date">${dateStr}</span></div><div class="ks-card-title">${highlight(item.title,raw)}</div><div class="ks-card-desc">${highlight(item.desc,raw)}</div></div>`;}).join('');
+  el.innerHTML=`<div style="font-size:12px;color:#888;margin-bottom:10px;"><strong>${results.length}개</strong> 결과 — "${raw}"</div>`+
+    results.map(item=>{
+      const s=typeStyles[item.type];const d=item.date?new Date(item.date):null;const ds=d?`${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일`:'';
+      return `<div class="ks-card"><div class="ks-card-top"><span class="ks-card-type" style="background:${s.bg};color:${s.color};">${s.label}</span><span class="ks-card-date">${ds}</span></div><div class="ks-card-title">${highlight(item.title,raw)}</div><div class="ks-card-desc">${highlight(item.desc,raw)}</div></div>`;
+    }).join('');
 }
 document.getElementById('ksInput').addEventListener('keydown',e=>{if(e.key==='Enter')runSearch();});
 document.getElementById('ksInput').addEventListener('input',e=>{if(e.target.value.trim().length>=2)runSearch();});
