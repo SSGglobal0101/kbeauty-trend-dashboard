@@ -1,8 +1,8 @@
 {
   "date": "2026-07-25",
-  "generated_at": "2026-07-25T03:35:20.672590+00:00",
+  "generated_at": "2026-07-25T04:08:45.851508+00:00",
   "summary": {
-    "total_keywords": 208,
+    "total_keywords": 203,
     "platforms": 6,
     "where_to_buy_search": 0
   },
@@ -10,12 +10,12 @@
     "instagram": {
       "total": 90,
       "top_hashtags": [
-        "koreanbeauty",
-        "kbeautyhaul",
-        "kbeauty",
-        "koreanskincare",
         "koreanfashion",
-        "seoullife"
+        "koreanskincare",
+        "seoullife",
+        "kbeauty",
+        "koreanbeauty",
+        "kbeautyhaul"
       ]
     },
     "tiktok": {
@@ -23,17 +23,17 @@
       "top_keywords": [
         "korean skincare",
         "kpop style",
-        "grwm korean",
-        "kbeauty"
+        "kbeauty",
+        "grwm korean"
       ]
     },
     "youtube": {
       "total": 32,
       "top_keywords": [
         "kbeauty haul",
-        "korea travel shopping",
+        "k beauty review",
         "korean skincare routine",
-        "k beauty review"
+        "korea travel shopping"
       ]
     },
     "x": {
@@ -45,21 +45,15 @@
     "amazon": {
       "total": 32,
       "top_keywords": [
-        "cica cream",
+        "korean skin care",
         "snail mucin serum",
         "korean sunscreen",
-        "korean skin care"
+        "cica cream"
       ]
     },
     "google_trends": {
-      "total": 5,
-      "keywords": [
-        "korean skincare",
-        "k-beauty brands",
-        "cica cream",
-        "where to buy korean skincare",
-        "korean beauty products"
-      ]
+      "total": 0,
+      "keywords": []
     }
   },
   "brands": [
@@ -76,12 +70,7 @@
       "score": 26
     }
   ],
-  "ingredients": [
-    {
-      "name": "cica",
-      "score": 5
-    }
-  ],
+  "ingredients": [],
   "signals": [
     {
       "type": "sig-season",
@@ -96,12 +85,6 @@
       "dday": "7~8월"
     },
     {
-      "type": "sig-ingredient",
-      "badge": "성분",
-      "text": "Cica 바이럴 — SNS 전반 언급량 급증 (스코어: 5)",
-      "dday": "진행 중"
-    },
-    {
       "type": "sig-social",
       "badge": "브랜드",
       "text": "Etude — 이번 주 SNS 언급 1위 (스코어: 27)",
@@ -109,78 +92,10 @@
     }
   ],
   "region_brands": {
-    "us": [
-      {
-        "name": "medicube",
-        "score": 58
-      },
-      {
-        "name": "anua",
-        "score": 54
-      },
-      {
-        "name": "biodance",
-        "score": 43
-      },
-      {
-        "name": "laneige",
-        "score": 39
-      },
-      {
-        "name": "innisfree",
-        "score": 34
-      }
-    ],
-    "eu": [
-      {
-        "name": "medicube",
-        "score": 49
-      },
-      {
-        "name": "beauty of joseon",
-        "score": 31
-      },
-      {
-        "name": "anua",
-        "score": 26
-      },
-      {
-        "name": "biodance",
-        "score": 21
-      },
-      {
-        "name": "laneige",
-        "score": 16
-      }
-    ],
-    "me": [
-      {
-        "name": "medicube",
-        "score": 22
-      },
-      {
-        "name": "anua",
-        "score": 4
-      },
-      {
-        "name": "cosrx",
-        "score": 2
-      },
-      {
-        "name": "beauty of joseon",
-        "score": 1
-      },
-      {
-        "name": "purito",
-        "score": 1
-      }
-    ],
-    "sea": [
-      {
-        "name": "abib",
-        "score": 1
-      }
-    ]
+    "us": [],
+    "eu": [],
+    "me": [],
+    "sea": []
   },
   "gap_brands": {
     "us": [],
@@ -645,218 +560,227 @@
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 316100,
-        "likes": 36100,
-        "shares": 980,
-        "author": "koocat",
-        "author_fans": 349500
+        "plays": 483600,
+        "likes": 10200,
+        "shares": 779,
+        "author": "aliciasannn",
+        "author_fans": 238600
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 171800,
-        "likes": 10100,
-        "shares": 673,
-        "author": "krystallee2222",
-        "author_fans": 204500
+        "plays": 37500,
+        "likes": 1259,
+        "shares": 43,
+        "author": "aimeechengbradshaw",
+        "author_fans": 89600
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 218900,
-        "likes": 26200,
-        "shares": 588,
-        "author": "mi_seorin",
-        "author_fans": 3245
+        "plays": 571800,
+        "likes": 47000,
+        "shares": 1772,
+        "author": "danieljchan",
+        "author_fans": 116700
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 4932,
-        "likes": 165,
-        "shares": 7,
-        "author": "esmoosy",
-        "author_fans": 1216
+        "plays": 73400,
+        "likes": 545,
+        "shares": 13,
+        "author": "innisfreesingapore",
+        "author_fans": 22900
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 335600,
-        "likes": 18700,
-        "shares": 280,
-        "author": "jasmineflowerable",
-        "author_fans": 49300
+        "plays": 887400,
+        "likes": 80600,
+        "shares": 2614,
+        "author": "saeroniee",
+        "author_fans": 492800
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 345,
-        "likes": 123,
-        "shares": 8,
-        "author": "bunnidollyy",
-        "author_fans": 41500
+        "plays": 621200,
+        "likes": 18900,
+        "shares": 942,
+        "author": "rosiechalle",
+        "author_fans": 53700
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 6208,
-        "likes": 1682,
-        "shares": 148,
-        "author": "lovelymiri05",
-        "author_fans": 254700
+        "plays": 198100,
+        "likes": 6026,
+        "shares": 75,
+        "author": "aimeechengbradshaw",
+        "author_fans": 89600
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 946300,
-        "likes": 119000,
-        "shares": 3231,
+        "plays": 467400,
+        "likes": 13100,
+        "shares": 1734,
+        "author": "mongabong",
+        "author_fans": 73200
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 536200,
+        "likes": 39300,
+        "shares": 1027,
+        "author": "danieljchan",
+        "author_fans": 116700
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 53600,
+        "likes": 5619,
+        "shares": 61,
+        "author": "rosiechalle",
+        "author_fans": 53700
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "korean skincare",
+        "plays": 324400,
+        "likes": 28400,
+        "shares": 884,
         "author": "sasainseoul",
         "author_fans": 1300000
       },
       {
         "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 126700,
-        "likes": 16700,
-        "shares": 194,
-        "author": "taxinoodle",
-        "author_fans": 77500
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 804600,
-        "likes": 49000,
-        "shares": 349,
-        "author": "missdarcei",
-        "author_fans": 2500000
+        "keyword": "korean skincare",
+        "plays": 1100000,
+        "likes": 21800,
+        "shares": 680,
+        "author": "hwaniiee",
+        "author_fans": 1800000
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 56000,
-        "likes": 3095,
-        "shares": 48,
-        "author": "emiliamup",
-        "author_fans": 1000000
+        "plays": 478700,
+        "likes": 43400,
+        "shares": 1451,
+        "author": "sasainseoul",
+        "author_fans": 1300000
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 210000,
-        "likes": 4006,
-        "shares": 1780,
-        "author": "emmamakeup0",
-        "author_fans": 6592
+        "plays": 1900000,
+        "likes": 52300,
+        "shares": 4500,
+        "author": "kbeauty_gem",
+        "author_fans": 12800
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 58100,
-        "likes": 1013,
-        "shares": 51,
-        "author": "dr.urselmann",
-        "author_fans": 3510
+        "plays": 2115,
+        "likes": 18,
+        "shares": 2,
+        "author": "dear.kbeauty.sg",
+        "author_fans": 0
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 72900,
-        "likes": 433,
-        "shares": 33,
-        "author": "nomakeupbeauty.de",
-        "author_fans": 26600
+        "plays": 1400000,
+        "likes": 87100,
+        "shares": 7883,
+        "author": "tatiencorea",
+        "author_fans": 3500000
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 128100,
-        "likes": 5481,
-        "shares": 647,
-        "author": "sophia.rinkau",
-        "author_fans": 8983
+        "plays": 185100,
+        "likes": 13500,
+        "shares": 486,
+        "author": "sasainseoul",
+        "author_fans": 1300000
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 329300,
-        "likes": 18200,
-        "shares": 2157,
-        "author": "prada.darlain",
-        "author_fans": 169100
+        "plays": 57300,
+        "likes": 3725,
+        "shares": 69,
+        "author": "meimazing",
+        "author_fans": 985900
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 481500,
-        "likes": 37200,
-        "shares": 2222,
-        "author": "bruna_naomi",
-        "author_fans": 578200
+        "plays": 3100000,
+        "likes": 230000,
+        "shares": 12800,
+        "author": "mindaylee_",
+        "author_fans": 620100
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 5900000,
-        "likes": 192300,
-        "shares": 27400,
-        "author": "s.k10440",
-        "author_fans": 5256
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "korean skincare",
-        "plays": 6700000,
-        "likes": 353100,
-        "shares": 16400,
-        "author": "summercooljinny",
-        "author_fans": 87300
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "korean skincare",
-        "plays": 3400000,
-        "likes": 367500,
-        "shares": 17600,
-        "author": "chxrry.glowy",
-        "author_fans": 267400
+        "plays": 2124,
+        "likes": 31,
+        "shares": 1,
+        "author": "kimmyskintips4",
+        "author_fans": 71
       },
       {
         "platform": "tiktok",
         "keyword": "grwm korean",
-        "plays": 7100000,
-        "likes": 704200,
-        "shares": 12400,
-        "author": "yexxn_zz",
-        "author_fans": 283000
+        "plays": 1700000,
+        "likes": 134800,
+        "shares": 1166,
+        "author": "hjevelyn",
+        "author_fans": 4500000
       },
       {
         "platform": "tiktok",
         "keyword": "grwm korean",
-        "plays": 2000000,
-        "likes": 366400,
-        "shares": 3451,
-        "author": "aileen.song",
-        "author_fans": 28200
+        "plays": 82000,
+        "likes": 3476,
+        "shares": 45,
+        "author": "so._1x0",
+        "author_fans": 4061
       },
       {
         "platform": "tiktok",
         "keyword": "grwm korean",
-        "plays": 807300,
-        "likes": 171900,
-        "shares": 2712,
-        "author": "channylime",
-        "author_fans": 12700
+        "plays": 2700000,
+        "likes": 322400,
+        "shares": 18000,
+        "author": "sonyeena",
+        "author_fans": 282800
       },
       {
         "platform": "tiktok",
         "keyword": "grwm korean",
-        "plays": 866800,
-        "likes": 93100,
-        "shares": 1490,
-        "author": "ngyn.ttien",
-        "author_fans": 8800
+        "plays": 5400000,
+        "likes": 585700,
+        "shares": 6660,
+        "author": "amyflamy1",
+        "author_fans": 5900000
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "grwm korean",
+        "plays": 2600000,
+        "likes": 226500,
+        "shares": 1272,
+        "author": "jooshica",
+        "author_fans": 5300000
       },
       {
         "platform": "tiktok",
@@ -870,76 +794,58 @@
       {
         "platform": "tiktok",
         "keyword": "grwm korean",
-        "plays": 157800,
-        "likes": 14500,
-        "shares": 441,
-        "author": "0205sy",
-        "author_fans": 194300
+        "plays": 2600000,
+        "likes": 178400,
+        "shares": 1624,
+        "author": "kimberlykimpena",
+        "author_fans": 4100000
       },
       {
         "platform": "tiktok",
         "keyword": "grwm korean",
-        "plays": 365800,
-        "likes": 22400,
-        "shares": 754,
-        "author": "gllit049",
-        "author_fans": 1878
+        "plays": 9673,
+        "likes": 377,
+        "shares": 9,
+        "author": "agneska9993",
+        "author_fans": 101400
       },
       {
         "platform": "tiktok",
         "keyword": "grwm korean",
-        "plays": 734100,
-        "likes": 102800,
-        "shares": 1665,
-        "author": "kimyoojin.n0",
-        "author_fans": 113100
+        "plays": 2100000,
+        "likes": 226000,
+        "shares": 5259,
+        "author": "yezi.beauty",
+        "author_fans": 170500
       },
       {
         "platform": "tiktok",
         "keyword": "grwm korean",
-        "plays": 18200,
-        "likes": 342,
-        "shares": 19,
-        "author": "ganii1387",
-        "author_fans": 6096
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "grwm korean",
-        "plays": 200700,
-        "likes": 29300,
-        "shares": 712,
-        "author": "koocat",
-        "author_fans": 349500
+        "plays": 807400,
+        "likes": 172000,
+        "shares": 2713,
+        "author": "channylime",
+        "author_fans": 12700
       }
     ],
     "youtube": [
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
-        "title": "how to get GLASS skin *for beginners* | affordable skincare routine + best korean skincare products",
-        "views": 1223393,
-        "likes": 34000,
-        "channel": "kelly",
-        "channel_url": "https://www.youtube.com/@Itsbabykelz"
-      },
-      {
-        "platform": "youtube",
-        "keyword": "korean skincare routine",
-        "title": "skincare routine │ korean skincare, glassy + glowy skin, what i use for acne prone skin",
-        "views": 880884,
-        "likes": 24000,
-        "channel": "nicole hong",
-        "channel_url": "https://www.youtube.com/@nicoleehong"
-      },
-      {
-        "platform": "youtube",
-        "keyword": "korean skincare routine",
-        "title": "Korean skincare routine + best products for oily skin",
-        "views": 334088,
-        "likes": 11000,
+        "title": "Korean skincare products + simple routine for beginners (each skin type)",
+        "views": 1266543,
+        "likes": 40000,
         "channel": "blueyoobin",
         "channel_url": "https://www.youtube.com/@blueyoobin"
+      },
+      {
+        "platform": "youtube",
+        "keyword": "korean skincare routine",
+        "title": "I Tried A 10-Step Korean Skincare Routine For A Month",
+        "views": 9667141,
+        "likes": 246000,
+        "channel": "Safiya Nygaard",
+        "channel_url": "https://www.youtube.com/@safiya"
       },
       {
         "platform": "youtube",
@@ -953,17 +859,26 @@
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
-        "title": "Korean skincare products + simple routine for beginners (each skin type)",
-        "views": 1266547,
-        "likes": 40000,
-        "channel": "blueyoobin",
-        "channel_url": "https://www.youtube.com/@blueyoobin"
+        "title": "skincare routine │ korean skincare, glassy + glowy skin, what i use for acne prone skin",
+        "views": 880877,
+        "likes": 24000,
+        "channel": "nicole hong",
+        "channel_url": "https://www.youtube.com/@nicoleehong"
+      },
+      {
+        "platform": "youtube",
+        "keyword": "korean skincare routine",
+        "title": "morning skincare routine for glass skin **korean skincare**",
+        "views": 17566,
+        "likes": 670,
+        "channel": "Jazmin Amaya",
+        "channel_url": "https://www.youtube.com/@jazamayaa"
       },
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
         "title": "5-Minute KOREAN GLASS SKIN with just 5 Products | Quick & Easy AM/PM  Routine",
-        "views": 23708,
+        "views": 23711,
         "likes": 459,
         "channel": "Kiyoko Beauty",
         "channel_url": "https://www.youtube.com/@kiyoko.beauty"
@@ -971,38 +886,38 @@
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
-        "title": "I Tried A 10-Step Korean Skincare Routine For A Month",
-        "views": 9667142,
-        "likes": 246000,
-        "channel": "Safiya Nygaard",
-        "channel_url": "https://www.youtube.com/@safiya"
+        "title": "how to get GLASS skin *for beginners* | affordable skincare routine + best korean skincare products",
+        "views": 1223445,
+        "likes": 34000,
+        "channel": "kelly",
+        "channel_url": "https://www.youtube.com/@Itsbabykelz"
       },
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
-        "title": "How to Layer Your FULL Skincare Routine with Viral Korean Skincare 2025! AM & PM",
-        "views": 74748,
-        "likes": 2700,
-        "channel": "IAMKARENO",
-        "channel_url": "https://www.youtube.com/@iamkareno"
+        "title": "my skincare routine for glass skin **korean skincare**",
+        "views": 62174,
+        "likes": 2200,
+        "channel": "Jazmin Amaya",
+        "channel_url": "https://www.youtube.com/@jazamayaa"
       },
       {
         "platform": "youtube",
         "keyword": "kbeauty haul",
         "title": "Testing The HIGHEST RATED K-Beauty Products! Are They ACTUALLY Good?",
-        "views": 4289,
-        "likes": 403,
+        "views": 4443,
+        "likes": 418,
         "channel": "Roxxsaurus",
         "channel_url": "https://www.youtube.com/@Roxxsaurus"
       },
       {
         "platform": "youtube",
         "keyword": "kbeauty haul",
-        "title": "The only Kbeauty Skincare You Need! | Amazon Prime Recs! (JUNE 23~26)",
-        "views": 12514,
-        "likes": 496,
-        "channel": "Soo Beauty 수뷰티 ",
-        "channel_url": "https://www.youtube.com/@Soobeauty_official"
+        "title": "Everything I Bought at Olive Young In Korea! Korean Skincare Haul",
+        "views": 43996,
+        "likes": 2100,
+        "channel": "James Welsh",
+        "channel_url": "https://www.youtube.com/@JamesWelsh"
       },
       {
         "platform": "youtube",
@@ -1016,8 +931,17 @@
       {
         "platform": "youtube",
         "keyword": "kbeauty haul",
+        "title": "$300 YESSTYLE k-beauty haul; brand new releases & viral products",
+        "views": 96707,
+        "likes": 3200,
+        "channel": "janna ₊᪥⋆. ݁",
+        "channel_url": "https://www.youtube.com/@luv2jna"
+      },
+      {
+        "platform": "youtube",
+        "keyword": "kbeauty haul",
         "title": "summer kbeauty haul 👙🧁 skincare to keep skin clear and cool, pretty makeup for that summer glow! 🌞",
-        "views": 25540,
+        "views": 25541,
         "likes": 882,
         "channel": "Dica",
         "channel_url": "https://www.youtube.com/@dicadaily"
@@ -1034,65 +958,56 @@
       {
         "platform": "youtube",
         "keyword": "kbeauty haul",
+        "title": "Korean Skincare I Keep Buying: KBeauty Haul",
+        "views": 154176,
+        "likes": 4800,
+        "channel": "Dr Dray",
+        "channel_url": "https://www.youtube.com/@DrDrayzday"
+      },
+      {
+        "platform": "youtube",
+        "keyword": "kbeauty haul",
         "title": "summer kbeauty shopping haul 🪽🧼 etude princess collection, skincare for oily combi skin, repurchases",
-        "views": 5883,
+        "views": 5884,
         "likes": 250,
         "channel": "Dica",
         "channel_url": "https://www.youtube.com/@dicadaily"
       },
       {
         "platform": "youtube",
-        "keyword": "kbeauty haul",
-        "title": "KBEAUTY HAUL 🍒💗 new releases from fwee, peripera, lilybyred, colorgram, dasique, etc. at Olive Young",
-        "views": 30643,
+        "keyword": "korea travel shopping",
+        "title": "🇰🇷Seoul Shopping: INSIDER'S GUIDE! Budget-Friendly Shopping, Street Shopping & Luxury Brand Shopping",
+        "views": 69297,
+        "likes": 1100,
+        "channel": "Modern Pepper",
+        "channel_url": "https://www.youtube.com/@ModernPepper"
+      },
+      {
+        "platform": "youtube",
+        "keyword": "korea travel shopping",
+        "title": "Everything Is Weirdly Cheap in Korea",
+        "views": 108077,
+        "likes": 2200,
+        "channel": "Elliot Page",
+        "channel_url": "https://www.youtube.com/@elliotpage_"
+      },
+      {
+        "platform": "youtube",
+        "keyword": "korea travel shopping",
+        "title": "SHOPPING IN KOREA 🇰🇷 | Myeongdong shopping&food street | korea vlog-Seoul KOREA 2025",
+        "views": 126097,
         "likes": 1300,
-        "channel": "Dica",
-        "channel_url": "https://www.youtube.com/@dicadaily"
-      },
-      {
-        "platform": "youtube",
-        "keyword": "kbeauty haul",
-        "title": "$300 YESSTYLE k-beauty haul; brand new releases & viral products",
-        "views": 96683,
-        "likes": 3200,
-        "channel": "janna ₊᪥⋆. ݁",
-        "channel_url": "https://www.youtube.com/@luv2jna"
+        "channel": "walk tourist",
+        "channel_url": "https://www.youtube.com/@iamwalktourist"
       },
       {
         "platform": "youtube",
         "keyword": "korea travel shopping",
-        "title": "3 days in seoul | shopping, getting my makeup done by a k-beauty artist & trying korean snacks ♡",
-        "views": 603965,
-        "likes": 13000,
-        "channel": "Samantha Harvey",
-        "channel_url": "https://www.youtube.com/@makeupbysamanthaharvey"
-      },
-      {
-        "platform": "youtube",
-        "keyword": "korea travel shopping",
-        "title": "SEOUL GUIDE - The Best Sneakers and Streetwear Stores, Hidden Cafes and Date Spots",
-        "views": 67088,
-        "likes": 1400,
-        "channel": "Josh Dominic",
-        "channel_url": "https://www.youtube.com/@joshdominic"
-      },
-      {
-        "platform": "youtube",
-        "keyword": "korea travel shopping",
-        "title": "This is what SHOPPING in SEOUL is like! 🇰🇷",
-        "views": 220217,
-        "likes": 2900,
-        "channel": "Jan and Ann",
-        "channel_url": "https://www.youtube.com/@JanandAnn"
-      },
-      {
-        "platform": "youtube",
-        "keyword": "korea travel shopping",
-        "title": "SUMMER IN KOREA VLOG 🩷🎡 lotte world, brandy melville, come shopping with me in seongsu, airbnb tour",
-        "views": 4291,
-        "likes": 183,
-        "channel": "Catherine Ada",
-        "channel_url": "https://www.youtube.com/@CatherineAda"
+        "title": "SPENDING ALL OF MY MONEY IN SEOUL… (7-eleven, shopping, skincare, Korean BBQ, food market, & more!)",
+        "views": 118997,
+        "likes": 2800,
+        "channel": "Julia Bedell",
+        "channel_url": "https://www.youtube.com/@JuliaBedell"
       }
     ],
     "x": [
@@ -1320,37 +1235,6 @@
         "reviews": 0
       }
     ],
-    "google": [
-      {
-        "platform": "google_trends",
-        "keyword": "korean skincare",
-        "interest": 27,
-        "geo": "global"
-      },
-      {
-        "platform": "google_trends",
-        "keyword": "k-beauty brands",
-        "interest": 0,
-        "geo": "global"
-      },
-      {
-        "platform": "google_trends",
-        "keyword": "cica cream",
-        "interest": 5,
-        "geo": "global"
-      },
-      {
-        "platform": "google_trends",
-        "keyword": "where to buy korean skincare",
-        "interest": 0,
-        "geo": "global"
-      },
-      {
-        "platform": "google_trends",
-        "keyword": "korean beauty products",
-        "interest": 2,
-        "geo": "global"
-      }
-    ]
+    "google": []
   }
 }
