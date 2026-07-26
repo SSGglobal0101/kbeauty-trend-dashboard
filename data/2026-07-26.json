@@ -1,8 +1,8 @@
 {
   "date": "2026-07-26",
-  "generated_at": "2026-07-26T03:32:26.650060+00:00",
+  "generated_at": "2026-07-26T05:55:20.815735+00:00",
   "summary": {
-    "total_keywords": 208,
+    "total_keywords": 203,
     "platforms": 8,
     "where_to_buy_search": 0
   },
@@ -10,29 +10,29 @@
     "instagram": {
       "total": 90,
       "top_hashtags": [
+        "koreanskincare",
         "koreanbeauty",
         "seoullife",
         "kbeautyhaul",
         "kbeauty",
-        "koreanfashion",
-        "koreanskincare"
+        "koreanfashion"
       ]
     },
     "tiktok": {
       "total": 40,
       "top_keywords": [
+        "korean skincare",
         "kbeauty",
         "kpop style",
-        "grwm korean",
-        "korean skincare"
+        "grwm korean"
       ]
     },
     "youtube": {
       "total": 32,
       "top_keywords": [
-        "korea travel shopping",
-        "kbeauty haul",
         "korean skincare routine",
+        "kbeauty haul",
+        "korea travel shopping",
         "k beauty review"
       ]
     },
@@ -50,21 +50,15 @@
     "amazon": {
       "total": 32,
       "top_keywords": [
-        "korean sunscreen",
-        "korean skin care",
         "snail mucin serum",
-        "cica cream"
+        "korean skin care",
+        "cica cream",
+        "korean sunscreen"
       ]
     },
     "google_trends": {
-      "total": 5,
-      "keywords": [
-        "korean skincare",
-        "k-beauty brands",
-        "cica cream",
-        "where to buy korean skincare",
-        "korean beauty products"
-      ]
+      "total": 0,
+      "keywords": []
     },
     "xiaohongshu": {
       "total": 0,
@@ -89,58 +83,54 @@
   },
   "brands": [
     {
-      "name": "anua",
-      "score": 543
-    },
-    {
       "name": "etude",
       "score": 393
     },
     {
-      "name": "innisfree",
-      "score": 233
+      "name": "purito",
+      "score": 119
     },
     {
-      "name": "round lab",
-      "score": 232
+      "name": "isntree",
+      "score": 119
     },
     {
-      "name": "biodance",
-      "score": 227
+      "name": "laneige",
+      "score": 53
     },
     {
       "name": "medicube",
       "score": 34
     },
     {
-      "name": "romand",
-      "score": 31
+      "name": "anua",
+      "score": 32
     },
     {
       "name": "skin1004",
-      "score": 30
+      "score": 31
     },
     {
       "name": "cosrx",
-      "score": 26
+      "score": 27
+    },
+    {
+      "name": "romand",
+      "score": 27
+    },
+    {
+      "name": "round lab",
+      "score": 2
     }
   ],
   "ingredients": [
     {
-      "name": "cica",
-      "score": 464
+      "name": "azelaic acid",
+      "score": 15
     },
     {
       "name": "vitamin c",
-      "score": 238
-    },
-    {
-      "name": "retinol",
-      "score": 232
-    },
-    {
-      "name": "azelaic acid",
-      "score": 15
+      "score": 6
     },
     {
       "name": "peptide",
@@ -155,13 +145,13 @@
     {
       "type": "sig-social",
       "badge": "Instagram",
-      "text": "인스타 급상승 해시태그 — #kbeautyhaul",
+      "text": "인스타 급상승 해시태그 — #kbeautyhaul #koreanfashion",
       "dday": "이번 주"
     },
     {
       "type": "sig-social",
       "badge": "TikTok",
-      "text": "TikTok 바이럴 태그 — #koreanskincare #kpop #koreanmakeup",
+      "text": "TikTok 바이럴 태그 — #koreanskincare #koreanmakeup #kpop",
       "dday": "진행 중"
     },
     {
@@ -173,20 +163,20 @@
     {
       "type": "sig-ingredient",
       "badge": "성분",
-      "text": "Cica — 이번 주 SNS 전반 언급 급증 (스코어: 464)",
+      "text": "Azelaic Acid — 이번 주 SNS 전반 언급 급증 (스코어: 15)",
       "dday": "진행 중"
     },
     {
       "type": "sig-social",
       "badge": "브랜드",
-      "text": "Anua — 이번 주 8개 플랫폼 언급 1위 (스코어: 543)",
+      "text": "Etude — 이번 주 8개 플랫폼 언급 1위 (스코어: 393)",
       "dday": "이번 주"
     }
   ],
   "heatmap": [
     {
-      "name": "anua",
-      "score": 543,
+      "name": "etude",
+      "score": 393,
       "pattern": [
         "#b5d4f4",
         "#378add",
@@ -197,103 +187,103 @@
       "label_color": "#c0392b"
     },
     {
-      "name": "etude",
-      "score": 393,
+      "name": "purito",
+      "score": 119,
       "pattern": [
         "#f0f0ec",
-        "#b5d4f4",
-        "#378add",
-        "#0c447c"
+        "#f0f0ec",
+        "#f0f0ec",
+        "#b5d4f4"
       ],
-      "label": "상승세",
-      "label_color": "#27ae60"
+      "label": "낮음",
+      "label_color": "#bbb"
     },
     {
-      "name": "innisfree",
-      "score": 233,
+      "name": "isntree",
+      "score": 119,
       "pattern": [
         "#f0f0ec",
         "#f0f0ec",
-        "#b5d4f4",
-        "#378add"
+        "#f0f0ec",
+        "#b5d4f4"
       ],
-      "label": "보통",
-      "label_color": "#888"
+      "label": "낮음",
+      "label_color": "#bbb"
     },
     {
-      "name": "round lab",
-      "score": 232,
+      "name": "laneige",
+      "score": 53,
       "pattern": [
         "#f0f0ec",
         "#f0f0ec",
-        "#b5d4f4",
-        "#378add"
+        "#f0f0ec",
+        "#f0f0ec"
       ],
-      "label": "보통",
-      "label_color": "#888"
+      "label": "미미",
+      "label_color": "#ccc"
     },
     {
-      "name": "biodance",
-      "score": 227,
+      "name": "medicube",
+      "score": 34,
       "pattern": [
         "#f0f0ec",
         "#f0f0ec",
-        "#b5d4f4",
-        "#378add"
+        "#f0f0ec",
+        "#f0f0ec"
       ],
-      "label": "보통",
-      "label_color": "#888"
+      "label": "미미",
+      "label_color": "#ccc"
     }
   ],
   "region_brands": {
     "us": [
       {
         "name": "medicube",
-        "score": 58
+        "score": 59
       },
       {
         "name": "anua",
-        "score": 50
-      },
-      {
-        "name": "innisfree",
-        "score": 40
+        "score": 51
       },
       {
         "name": "biodance",
         "score": 40
       },
       {
-        "name": "round lab",
-        "score": 38
+        "name": "laneige",
+        "score": 36
+      },
+      {
+        "name": "innisfree",
+        "score": 31
       }
     ],
     "eu": [
       {
         "name": "medicube",
-        "score": 51
+        "score": 52
       },
       {
         "name": "beauty of joseon",
-        "score": 41
-      },
-      {
-        "name": "anua",
-        "score": 35
+        "score": 37
       },
       {
         "name": "biodance",
+        "score": 34
+      },
+      {
+        "name": "anua",
         "score": 33
       },
       {
         "name": "laneige",
-        "score": 22
+        "score": 18
       }
     ],
     "me": [
       {
         "name": "medicube",
-        "score": 34
+        "score": 31
       },
       {
         "name": "anua",
@@ -306,39 +296,9 @@
       {
         "name": "cosrx",
         "score": 2
-      },
-      {
-        "name": "laneige",
-        "score": 1
       }
     ],
     "zh": [
-      {
-        "name": "innisfree",
-        "score": 4
-      },
-      {
-        "name": "medicube",
-        "score": 4
-      },
-      {
-        "name": "anua",
-        "score": 2
-      },
-      {
-        "name": "laneige",
-        "score": 1
-      },
-      {
-        "name": "skin1004",
-        "score": 1
-      }
-    ],
-    "sea": [
-      {
-        "name": "medicube",
-        "score": 9
-      },
       {
         "name": "anua",
         "score": 2
@@ -348,10 +308,11 @@
         "score": 1
       },
       {
-        "name": "mardi mercredi",
+        "name": "laneige",
         "score": 1
       }
-    ]
+    ],
+    "sea": []
   },
   "gap_brands": {
     "us": [],
@@ -406,119 +367,13 @@
         "hashtag": "kbeauty",
         "likes": 0,
         "comments": 0,
-        "owner": "jimenasolares_makeupventas",
+        "owner": "kbeauty_vn",
         "caption_hashtags": [
-          "skincare",
-          "skincareroutine",
-          "skincarecoreano",
-          "kbeauty",
-          "kbeautyskincare"
-        ]
-      },
-      {
-        "platform": "instagram",
-        "hashtag": "kbeauty",
-        "likes": 0,
-        "comments": 0,
-        "owner": "e2hyerim",
-        "caption_hashtags": [
-          "협찬",
-          "skincare",
-          "kbeauty",
-          "pharmacy",
-          "myeongdong"
-        ]
-      },
-      {
-        "platform": "instagram",
-        "hashtag": "kbeauty",
-        "likes": 0,
-        "comments": 0,
-        "owner": "weareglamful",
-        "caption_hashtags": [
-          "retinal",
-          "vitaminc",
-          "skincareroutine",
-          "antiaging",
-          "brightening",
-          "antioxidants",
-          "kbeauty",
-          "prestigeskincare"
-        ]
-      },
-      {
-        "platform": "instagram",
-        "hashtag": "kbeauty",
-        "likes": 0,
-        "comments": 0,
-        "owner": "vaydskin_cln",
-        "caption_hashtags": [
-          "vaydskin",
-          "kbeauty",
-          "skin1004",
-          "skincaremexico",
-          "pieldecristal"
-        ]
-      },
-      {
-        "platform": "instagram",
-        "hashtag": "kbeauty",
-        "likes": 0,
-        "comments": 0,
-        "owner": "k_beauty_care_bd",
-        "caption_hashtags": [
-          "BeautyOfJoseon",
-          "KoreanSkincare",
           "KBeauty",
-          "GlowSkin",
-          "SkincareBangladesh",
-          "OriginalKBeauty",
-          "SPF50",
-          "DailySunscreen",
-          "BeautyBLBD",
-          "HealthySkin",
-          "SunProtection",
-          "CashOnDelivery",
-          "Dhaka",
-          "Bangladesh",
-          "ShopNow",
-          "kbeautycarebd"
-        ]
-      },
-      {
-        "platform": "instagram",
-        "hashtag": "kbeauty",
-        "likes": 0,
-        "comments": 2,
-        "owner": "_10uni",
-        "caption_hashtags": [
-          "베이지메이크업",
-          "헤메",
-          "헤어메이크업",
-          "메이크업",
-          "가로수길"
-        ]
-      },
-      {
-        "platform": "instagram",
-        "hashtag": "kbeauty",
-        "likes": 0,
-        "comments": 1,
-        "owner": "imsoglamour",
-        "caption_hashtags": []
-      },
-      {
-        "platform": "instagram",
-        "hashtag": "kbeauty",
-        "likes": 0,
-        "comments": 0,
-        "owner": "skincarewithapril",
-        "caption_hashtags": [
-          "SkincareOrganization",
-          "DollarTreeFinds",
-          "SkincareStorage",
-          "KBeauty",
-          "SkincareWithApril"
+          "KBeautyNhaTrang",
+          "Anua",
+          "VTCosmetics",
+          "DrAlthea"
         ]
       },
       {
@@ -526,7 +381,7 @@
         "hashtag": "kbeauty",
         "likes": 0,
         "comments": 0,
-        "owner": "chomchomstinn",
+        "owner": "chomc_homstin",
         "caption_hashtags": [
           "cosmetics",
           "kbeauty",
@@ -539,67 +394,68 @@
           "彩妝",
           "แต่งหน้า",
           "kecantikan",
-          "아이팔레트",
-          "아이섀도우",
-          "eyemakeuptutorial",
-          "eyepalette",
-          "eyeshadows"
+          "highligter",
+          "아이섀도우팔레트",
+          "멀티팔레트",
+          "아이섀도우추천",
+          "아이메이크업",
+          "팔레트추천",
+          "홀리데이팔레트"
         ]
       },
       {
         "platform": "instagram",
         "hashtag": "kbeauty",
-        "likes": 2,
+        "likes": 0,
         "comments": 0,
-        "owner": "v.ego_ceo",
+        "owner": "kayy.renewedbeauty",
         "caption_hashtags": [
-          "썬크림",
-          "자외선차단",
-          "피부관리",
-          "파메스테틱",
-          "kbeauty"
+          "summervibes☀️",
+          "rimanglow",
+          "kbeauty",
+          "momlifebelike"
         ]
       },
       {
         "platform": "instagram",
         "hashtag": "kbeauty",
-        "likes": 2,
+        "likes": 0,
         "comments": 0,
-        "owner": "among_iiiisaac",
+        "owner": "kbeauty_vn",
         "caption_hashtags": [
-          "긴머리레이어드",
-          "긴머리s컬",
-          "홍대미용실추천",
-          "여자머리펌",
-          "kbeauty"
-        ]
-      },
-      {
-        "platform": "instagram",
-        "hashtag": "kbeauty",
-        "likes": 25,
-        "comments": 2,
-        "owner": "sallywika",
-        "caption_hashtags": [
-          "TIRTIR",
-          "TIRTIRGlow",
           "KBeauty",
-          "GlassSkin",
-          "OOTD"
+          "KBeautyNhaTrang",
+          "Anua",
+          "DrAlthea",
+          "BeautyOfJoseon"
         ]
       },
       {
         "platform": "instagram",
         "hashtag": "kbeauty",
-        "likes": 0,
+        "likes": 13,
         "comments": 1,
-        "owner": "exosome_regen_med_aesthetics",
+        "owner": "nicebox.mx",
         "caption_hashtags": [
-          "ASCEplus",
-          "ASCEplusHomecare",
-          "카밍앰플",
-          "카밍앰플프로",
-          "엑소좀스킨케어"
+          "nicebox",
+          "kbeauty",
+          "skincarecoreano",
+          "querétaro",
+          "sueños"
+        ]
+      },
+      {
+        "platform": "instagram",
+        "hashtag": "kbeauty",
+        "likes": 5,
+        "comments": 0,
+        "owner": "iammimigarfield",
+        "caption_hashtags": [
+          "DooknDookn",
+          "KBeauty",
+          "KBeautyEvent",
+          "SBAGlobalScaleUp",
+          "KoreanBeauty"
         ]
       },
       {
@@ -607,69 +463,183 @@
         "hashtag": "kbeauty",
         "likes": 1,
         "comments": 0,
-        "owner": "kohonjin_lounge_official",
+        "owner": "jumiso_vn",
         "caption_hashtags": [
-          "고혼진",
-          "kohonjinbusan",
-          "kbeauty",
-          "busan"
+          "JUMISO",
+          "jumisovn",
+          "Niacinamide",
+          "kemchongnang",
+          "kbeauty"
         ]
       },
       {
         "platform": "instagram",
         "hashtag": "kbeauty",
-        "likes": 0,
-        "comments": 0,
-        "owner": "babiscompras",
-        "caption_hashtags": [
-          "kbeauty",
-          "skincare",
-          "retinal",
-          "antienvelhecimento",
-          "cuidadoscomapele"
-        ]
-      },
-      {
-        "platform": "instagram",
-        "hashtag": "koreanfashion",
         "likes": -1,
-        "comments": 1,
-        "owner": "imuraotoha",
-        "caption_hashtags": []
+        "comments": 0,
+        "owner": "miloon_official",
+        "caption_hashtags": [
+          "KBeauty",
+          "SkincareCoreana",
+          "CosmeticaCoreana",
+          "KBeautyset",
+          "Saldiestivi"
+        ]
       },
       {
         "platform": "instagram",
-        "hashtag": "koreanfashion",
+        "hashtag": "kbeauty",
+        "likes": 0,
+        "comments": 0,
+        "owner": "ishiq_shop",
+        "caption_hashtags": [
+          "سایه_چشم",
+          "سایه_چشم_کاپووینی",
+          "کاپووینی",
+          "Cappuvini",
+          "MiniDonutEyeshadow",
+          "آرایش_چشم",
+          "میکاپ",
+          "لوازم_آرایشی",
+          "آرایش_روزانه",
+          "آرایش_دخترانه",
+          "آرایش_ملایم",
+          "سایه_چشم_فانتزی",
+          "سایه_شاین",
+          "سایه_نود",
+          "پیگمنت_بالا",
+          "میکاپ_آرتیست",
+          "خرید_لوازم_آرایشی",
+          "لوازم_آرایشی_اصل",
+          "آرایش",
+          "آرایش_صورت",
+          "اکسپلور",
+          "explorepage",
+          "makeup",
+          "eyeshadow",
+          "beauty",
+          "cosmetics",
+          "makeuplover",
+          "makeupaddict",
+          "kbeauty",
+          "ishiq_shop"
+        ]
+      },
+      {
+        "platform": "instagram",
+        "hashtag": "kbeauty",
+        "likes": -1,
+        "comments": 3,
+        "owner": "likefor06",
+        "caption_hashtags": [
+          "kmakeup",
+          "khairstyle",
+          "kbeauty",
+          "koreamodel",
+          "cheongdamdong"
+        ]
+      },
+      {
+        "platform": "instagram",
+        "hashtag": "kbeauty",
+        "likes": 3,
+        "comments": 0,
+        "owner": "by_seoul_skin",
+        "caption_hashtags": [
+          "корейскаякосметика",
+          "уходзакожей",
+          "skincare",
+          "kbeauty",
+          "уходзалицом"
+        ]
+      },
+      {
+        "platform": "instagram",
+        "hashtag": "kbeauty",
+        "likes": 2,
+        "comments": 0,
+        "owner": "adventures_with_yai",
+        "caption_hashtags": [
+          "KBeauty",
+          "BeautyOfJoseon",
+          "RoundLab",
+          "COSRX",
+          "Arencia"
+        ]
+      },
+      {
+        "platform": "instagram",
+        "hashtag": "kbeauty",
+        "likes": 0,
+        "comments": 0,
+        "owner": "shabique.skincare",
+        "caption_hashtags": [
+          "Shabique",
+          "HydratedSkin",
+          "AustralianBeauty",
+          "SheetMask",
+          "GlowSkin",
+          "KBeautyAustralia",
+          "SkinCareAustralia",
+          "GlassSkin",
+          "KBeauty"
+        ]
+      },
+      {
+        "platform": "instagram",
+        "hashtag": "kbeauty",
         "likes": 1,
         "comments": 0,
-        "owner": "saranghanbok",
+        "owner": "glonicbeauty",
         "caption_hashtags": [
-          "노을공원웨딩스냅",
-          "hanboksarang",
-          "kyeongbokgung",
-          "korea",
-          "koreanfashion"
+          "GlonicBeauty",
+          "KBeauty",
+          "Skincare",
+          "OriginalCosmetics",
+          "BeautyOfJoseon"
+        ]
+      },
+      {
+        "platform": "instagram",
+        "hashtag": "kbeauty",
+        "likes": 0,
+        "comments": 0,
+        "owner": "threesistersstore3",
+        "caption_hashtags": [
+          "Peripera",
+          "AllTakeMoodLikePalette",
+          "KoreanBeauty",
+          "Kbeauty",
+          "MakeupPalette"
         ]
       },
       {
         "platform": "instagram",
         "hashtag": "koreanfashion",
         "likes": 0,
-        "comments": 1,
-        "owner": "stylemzofficial",
+        "comments": 0,
+        "owner": "hidiva_fit",
         "caption_hashtags": [
-          "stylemz",
-          "koreandesign",
-          "kfashion",
+          "HIDIVA",
+          "KFashion",
+          "KoreanFashion",
+          "FitStyle",
+          "MiniDress",
+          "Silhouette"
+        ]
+      },
+      {
+        "platform": "instagram",
+        "hashtag": "koreanfashion",
+        "likes": 1,
+        "comments": 0,
+        "owner": "thesooji.official",
+        "caption_hashtags": [
+          "koreastyle",
           "koreanfashion",
-          "madeinkorea",
-          "unisexfashion",
-          "crewneck",
-          "sustainablefashion",
-          "cottonstyle",
-          "streetwear",
-          "fashionforward",
-          "beauty"
+          "koreaoutfit",
+          "koreaoutfitidea",
+          "koreabajuwanita"
         ]
       },
       {
@@ -689,15 +659,43 @@
       {
         "platform": "instagram",
         "hashtag": "koreanfashion",
-        "likes": -1,
-        "comments": 0,
-        "owner": "lauriete_kimseokjin",
+        "likes": 18,
+        "comments": 1,
+        "owner": "aurakalla_jogja",
         "caption_hashtags": [
-          "seoul",
-          "koreatravel",
-          "korea",
+          "ootd",
+          "outfitoftoday",
+          "ootdfashion",
+          "dress",
+          "blouse",
+          "koreanstyle",
           "koreanfashion",
-          "love"
+          "summer",
+          "earthtone",
+          "outfitoftheday",
+          "cardigan",
+          "skirt",
+          "yogyakarta",
+          "outfitinspiration",
+          "croptop",
+          "blousecoquette",
+          "coquette",
+          "hangout",
+          "hangoutoutfit"
+        ]
+      },
+      {
+        "platform": "instagram",
+        "hashtag": "koreanfashion",
+        "likes": 0,
+        "comments": 0,
+        "owner": "beloviastyle.store",
+        "caption_hashtags": [
+          "BeloviaStyle",
+          "WelcomeToBelovia",
+          "KoreanFashion",
+          "CoquetteStyle",
+          "FesyenMuslimah"
         ]
       }
     ],
@@ -705,182 +703,200 @@
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 483600,
-        "likes": 10200,
-        "author": "aliciasannn",
-        "author_fans": 238600,
-        "hashtags": [
-          "peripera",
-          "periperasg",
-          "periperawaterbaretint",
-          "koreanmakeup",
-          "kbeauty",
-          "koreanliptints"
-        ],
-        "text": "hehe back to trying lip tints again, my fav 💗💗 test out Peripera’s water bare tints with me!! 🫶🏻 i rly love the bright colours and pigmented formula 🌸 what shade do you guys like best? #peripera #periperasg #periperawaterbaretint #koreanmakeup #kbeauty #koreanliptints"
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 37500,
-        "likes": 1259,
-        "author": "aimeechengbradshaw",
-        "author_fans": 89600,
+        "plays": 28200,
+        "likes": 2998,
+        "author": "fionlammm",
+        "author_fans": 30400,
         "hashtags": [
           "",
-          "eveningskincareroutine",
-          "grwmskincare",
-          "grwm",
-          "kbeautyskincare",
-          "clearskinroutine",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "creatorsearchinsights",
+          "makeupproducts",
           "kbeauty",
-          "skincareroutine",
-          "modelsskincareroutine",
-          "modeltok",
-          "skincaretok",
-          "learnontiktok",
-          "selfcare"
+          "koreanmakeup",
+          "makeuprecomendation"
         ],
-        "text": "Replying to @Madi_🌻 my evening skincare routine is my favorite me-time ever 💕 \n\n#eveningskincareroutine #grwmskincare #grwm #kbeautyskincare #clearskinroutine #kbeauty #skincareroutine #modelsskincareroutine #modeltok #skincaretok #learnontiktok #selfcare "
+        "text": "korea content soon ahh 🤭!! here are some stand out makeup products i’ll def be repurchasing 🫶 let me know if you’ve tried any of these :)\n\nproducts + timestamps: \n00:13 - @RISKY 리스키 be bold lip gloss (mei + guilty)\n1:00 - huemi melting lip glaze (sepia haze)\n1:35 - @Laka US @Laka mini jelling nde gloss (313 cool ring)\n2:03 - @bringgreen_official bamboo hyalu lip essence \n2:29 - @AOU Cosmetics blush (03 cherry blossom cheeks) \n2:58: @릴리바이레드 luv beam cheek balm (14 rosy beam)\n3:33 - @VDL 브이디엘 cheekstain blusher balm (pale fig balm + peach toast balm) \n4:13 - @Dear.A 디어에이 concealer palette (C05) \n4:56 - @espoir USA be velvet cover cushion (22 petal) \n5:25 - @퓌(fwee) @fwee_makeup_global all day cover black cushion (21N) \n5:51 - @公式 Wonjungyo（ウォンジョンヨ） mascara \n\n#creatorsearchinsights #makeupproducts #kbeauty #koreanmakeup #makeuprecomendation "
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 571800,
-        "likes": 47000,
-        "author": "danieljchan",
-        "author_fans": 116700,
+        "plays": 221100,
+        "likes": 26400,
+        "author": "mi_seorin",
+        "author_fans": 3351,
         "hashtags": [
-          "sgbeauty",
-          "kbeauty"
+          "koreanskincare",
+          "kbeauty",
+          "skincare",
+          "skincaretrap",
+          "fakeskincare"
         ],
-        "text": "want wear test say now #sgbeauty #kbeauty  "
+        "text": "Exposing Korean Beauty that is unnecessary, Part 2! 💸\nAnything, you recently wasted money on? 🤦🏻‍♀️\n\n#koreanskincare #kbeauty #skincare #skincaretrap #fakeskincare "
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 73400,
-        "likes": 545,
-        "author": "innisfreesingapore",
-        "author_fans": 22900,
+        "plays": 7445,
+        "likes": 1338,
+        "author": "lovelymiri05",
+        "author_fans": 254700,
         "hashtags": [
-          "innisfree",
-          "innisfreeskincare",
-          "greenteaseedserum",
+          "",
+          "",
+          "pinkaesthetic",
+          "wonyoungism",
           "kbeauty",
-          "sgbeauty",
-          "glowyskin"
+          "yesstyle",
+          "flowerknows"
         ],
-        "text": "On our way to plump, glowing, hydrated skin 💦 \n\n#INNISFREE #INNISFREEskincare #GreenTeaSeedSerum #kbeauty #sgbeauty #glowyskin "
+        "text": "sorry, but i have a weakness for cute packaging 🎀🩰🤭\n\n🌸 @YesStyle discount code: MIRIANAG05\n🌸 @Flower Knows Makeup discount code: lovelymiri05\n\n🏷️\n#pinkaesthetic #wonyoungism #kbeauty #yesstyle #flowerknows "
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 887400,
-        "likes": 80600,
-        "author": "saeroniee",
-        "author_fans": 492900,
+        "plays": 23700,
+        "likes": 956,
+        "author": "urkoreanmomsunny",
+        "author_fans": 14000,
         "hashtags": [
-          "recommendations",
-          "korean",
-          "sgbeauty",
           "kbeauty",
-          "oliveyoung",
-          "whattobuyinkorea",
-          "wishlist",
+          "koreanskincare",
+          "oliveyoung"
+        ],
+        "text": "Don’t buy these viral kbeauty products from Olive Young 👀\n\n#kbeauty #koreanskincare #oliveyoung "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 8412,
+        "likes": 484,
+        "author": "jasmineflowerable",
+        "author_fans": 49300,
+        "hashtags": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "kbeauty",
+          "koreanskincare",
+          "koreanskincareproducts",
+          "skincareinnovation",
+          "skincaretrends"
+        ],
+        "text": "Hottest Korean skincare launches right now 🚀\n\nBrands mentioned:\n@Heveblue.us \n@Dr.Althea US \n@ROUND LAB \n@COSRX Official \n@Abib Cosmetics \n@JUVELOOK SKINCARE \n@Dr.Reju-All US \n@IUNIK \n@dear, Klairs \n@Beauty of Joseon \n\n.\n.\n.\n#kbeauty #koreanskincare #koreanskincareproducts #skincareinnovation #skincaretrends"
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 273400,
+        "likes": 20000,
+        "author": "hiblondieitsme",
+        "author_fans": 18500,
+        "hashtags": [
+          "",
+          "creatorsearchinsights",
+          "glassskin",
+          "sensitiveskin",
+          "kbeauty",
+          "koreanskincare"
+        ],
+        "text": "Let me tell you about a time… @sunnyfromsunnybread changed my perspective on my glassy clear sensitive skin!! \n\n#creatorsearchinsights #glassskin #sensitiveskin #kbeauty #koreanskincare "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 953100,
+        "likes": 119600,
+        "author": "sasainseoul",
+        "author_fans": 1300000,
+        "hashtags": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "glowup",
+          "skincare",
+          "koreanskincare",
+          "kbeauty",
+          "glowuptips"
+        ],
+        "text": "3 skincare tips for July\n\nThis is not sponsored my real recommendation\n\nSunscreen @VT Cosmetics US \nToner @Blanc Nature US Store \nSerum @TORRIDEN US @PURITO SEOUL \nCream @mixsoon global \nCleanser @ISNTREE US @beplain 비플레인 \n\n#glowup #skincare #koreanskincare #kbeauty #glowuptips "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 6032,
+        "likes": 411,
+        "author": "lunalove2",
+        "author_fans": 117400,
+        "hashtags": [
+          "",
+          "",
+          "",
+          "",
+          "kbeauty",
+          "nycshopping",
+          "nyc",
+          "nycshopping",
+          "ktownnyc"
+        ],
+        "text": "KO’LLECTION is an affordable KBeauty store located in NYC. 💕 They have popular KBeauty brands like @롬앤 romand @mixsoon @ROUND LAB and so many more 💕\n-\n315 5th Ave Ste 1, New York, NY 10016\n-\nTy @KO'LLECTION for the invite\n-\n#kbeauty #nycshopping #nyc #nycshopping #ktownnyc"
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 884100,
+        "likes": 53300,
+        "author": "missdarcei",
+        "author_fans": 2500000,
+        "hashtags": [
+          "",
+          "",
+          "koreanmakeup",
+          "kbeauty",
+          "koreanfoundation",
           "makeup",
-          "fyp",
-          "foryou"
+          "beautytok"
         ],
-        "text": "I have more #recommendations but these are my top picks for now🫡 #korean #sgbeauty #kbeauty #oliveyoung #whattobuyinkorea #wishlist #makeup #fyp #foryou "
+        "text": "I got shade matched at the Laneige store in Korea 🩵@laneige_us @LANEIGE Korea #koreanmakeup #kbeauty #koreanfoundation #makeup #beautytok "
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 621300,
-        "likes": 18900,
-        "author": "rosiechalle",
-        "author_fans": 53700,
+        "plays": 1300000,
+        "likes": 157900,
+        "author": "hey__deets",
+        "author_fans": 347700,
         "hashtags": [
-          "",
-          "",
-          "kbeauty",
-          "eyeshadowpalette",
-          "clio",
-          "koreanmakeup",
-          "dailymakeup"
-        ],
-        "text": "Replying to @Belle Noisette underrated eyeshadow palette that has no leftover shades! \nPicnic By The Sunset no. 13 by @Clio Singapore \n#kbeauty #eyeshadowpalette #clio #koreanmakeup #dailymakeup "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 198100,
-        "likes": 6026,
-        "author": "aimeechengbradshaw",
-        "author_fans": 89600,
-        "hashtags": [
-          "",
-          "picassomakeupspatula",
-          "kbeauty",
-          "kbeautymakeup",
-          "kbeauty",
-          "comparison",
-          "picassospatula",
-          "makeuptok"
-        ],
-        "text": "Replying to @Ana picasso makeup spatual vs. back of a spoon handle, LET’S FIND OUT. This was so fun to film thank you for this comment! 😂 \n\n#picassomakeupspatula #kbeauty #kbeautymakeup #kbeauty #comparison #picassospatula #makeuptok "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 467400,
-        "likes": 13100,
-        "author": "mongabong",
-        "author_fans": 73200,
-        "hashtags": [
-          "oliveyoung",
-          "tiktoksg",
-          "picassospatula",
-          "foundationspatula",
-          "koreanmakeup",
           "kbeauty"
         ],
-        "text": "It really works?!? Run to #oliveyoung!!! #tiktoksg #picassospatula #foundationspatula #koreanmakeup #kbeauty "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 536200,
-        "likes": 39300,
-        "author": "danieljchan",
-        "author_fans": 116700,
-        "hashtags": [
-          "sgbeauty",
-          "kbeauty"
-        ],
-        "text": "guess which one i was wearing 💅💋 #sgbeauty #kbeauty "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 53600,
-        "likes": 5619,
-        "author": "rosiechalle",
-        "author_fans": 53700,
-        "hashtags": [
-          "kbeauty",
-          "romand",
-          "glastingwatergloss",
-          "koreanmakeup"
-        ],
-        "text": "When you’re wonyoung-nified too <3\n\nThis lipgloss is the one used by her MUA called Glasting Water Gloss 00 Meteor Track! #kbeauty #romand #glastingwatergloss #koreanmakeup "
+        "text": "mm i mean…. it’s not that simple😂😂😂  #kbeauty "
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 287800,
-        "likes": 6555,
+        "plays": 288200,
+        "likes": 6561,
         "author": "kim_pharmacist_glowskin",
         "author_fans": 187500,
         "hashtags": [
@@ -895,10 +911,10 @@
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 406300,
+        "plays": 406700,
         "likes": 25700,
         "author": "charinecheungg",
-        "author_fans": 579800,
+        "author_fans": 579900,
         "hashtags": [
           "",
           "",
@@ -931,8 +947,8 @@
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 66200,
-        "likes": 5054,
+        "plays": 66600,
+        "likes": 5093,
         "author": "summercooljinny",
         "author_fans": 87300,
         "hashtags": [
@@ -953,24 +969,43 @@
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 1900000,
-        "likes": 53200,
-        "author": "kbeauty_gem",
-        "author_fans": 13800,
+        "plays": 43100,
+        "likes": 2757,
+        "author": "heyinlees",
+        "author_fans": 58200,
         "hashtags": [
-          "oilyskin",
-          "kbeauty",
-          "skincare",
-          "anua",
-          "oliveyoung"
+          "",
+          "",
+          "thome",
+          "thometheglow",
+          "skincaredevice",
+          "ldmdevice",
+          "oliveyoungus"
         ],
-        "text": "Oily Skin?\nTry THIS ⭕, avoid THAT ❌\n\nFix your routine in just 20 seconds. Here is the ultimate guide from cleanser to sunscreen! 🧴\n\n#oilyskin #kbeauty #skincare #anua #oliveyoung "
+        "text": "products I’ve seen Korean locals buying, stocking up on and USING!😍\n\nlet me know if you wanna see a part 2! \n\nall products mentioned are available on @OLIVE YOUNG US! \n\n@THOME Official \n\n[AD]\n\n#thome #thometheglow #skincaredevice #LDMdevice #OliveyoungUS"
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 164600,
-        "likes": 9496,
+        "plays": 193000,
+        "likes": 13900,
+        "author": "sasainseoul",
+        "author_fans": 1300000,
+        "hashtags": [
+          "porecare",
+          "koreanskincare",
+          "skincare",
+          "enlargedpore",
+          "poretreatment",
+          ""
+        ],
+        "text": "How to fix elongated pore \n\n#porecare #koreanskincare #skincare #enlargedpore #poretreatment \n\nThis is partnered with @mixsoon_official @mixsoon global "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "korean skincare",
+        "plays": 164900,
+        "likes": 9512,
         "author": "brendaa.chan",
         "author_fans": 220300,
         "hashtags": [
@@ -994,40 +1029,25 @@
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 192300,
-        "likes": 13800,
-        "author": "sasainseoul",
-        "author_fans": 1300000,
+        "plays": 35300,
+        "likes": 1521,
+        "author": "manzanosofia",
+        "author_fans": 81300,
         "hashtags": [
-          "porecare",
+          "",
+          "",
+          "",
+          "",
           "koreanskincare",
-          "skincare",
-          "enlargedpore",
-          "poretreatment",
-          ""
+          "acneproneskin",
+          "acnemarks"
         ],
-        "text": "How to fix elongated pore \n\n#porecare #koreanskincare #skincare #enlargedpore #poretreatment \n\nThis is partnered with @mixsoon_official @mixsoon global "
+        "text": "what should i try next? 👀 @Dr.Althea US @anua_global @AXIS-Y Store US @SKIN1004 US #koreanskincare #acneproneskin #acnemarks"
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 646500,
-        "likes": 61700,
-        "author": "itsbabykelz",
-        "author_fans": 947000,
-        "hashtags": [
-          "koreanskincare",
-          "kbeauty",
-          "oliveyoung",
-          "skincareroutine",
-          "skincaretips"
-        ],
-        "text": "skincare that’s *ACTUALLY* popular in korea 👀 you’d be shocked at how many brands we barely hear about in the US 🫢 #koreanskincare #kbeauty #oliveyoung #skincareroutine #skincaretips "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "korean skincare",
-        "plays": 325300,
+        "plays": 325400,
         "likes": 28500,
         "author": "sasainseoul",
         "author_fans": 1300000,
@@ -1044,128 +1064,120 @@
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 3100000,
-        "likes": 232000,
-        "author": "mindaylee_",
-        "author_fans": 620800,
+        "plays": 376400,
+        "likes": 52000,
+        "author": "sunnyfromsunnybread",
+        "author_fans": 493900,
         "hashtags": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "koreanskincare",
-          "koreanskincareproducts",
-          "kbeauty",
-          "kbeautyskincare",
-          ""
+          "koreanskincare"
         ],
-        "text": "REAL POPULAR SKINCARE in korea ! ! ! my real experience living in korea and @올리브영 OLIVE YOUNG & @hwahae.global ! I wrote all products below ( of course no ad no money real real 😆😆) \n\nCLEANSER\n@beplain 비플레인 Mung Bean pH-Balanced Cleansing Foam\n(@BANILA CO zero cleansing balm, @manyo US soybean cleansing oil popular too)\ntoner\n@ROUND LAB 1025 dokdo toner\n(torriden dive in toner popular too)\n\nSERUM\n@𝗧𝗼𝗿𝗿𝗶𝗱𝗲𝗻 토리든 dive in hyaluronic serum\n@Innisfreeofficial vitamin c green tea serum \n(innisfreee retinol cica serum also popular)\n(@anua_global pdrn hyaluronic serum popular too)\n\nMOiSTURIZER\n@Dr.G 닥터지 blemish cream\n@S.NATURE aqua squalane moisturizer\n@aestura_us atobarrier 365 cream\n\n#koreanskincare #koreanskincareproducts #kbeauty #kbeautyskincare @Brute Choi 🧿 "
+        "text": "#koreanskincare "
       }
     ],
     "youtube": [
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
-        "title": "5-Minute KOREAN GLASS SKIN with just 5 Products | Quick & Easy AM/PM  Routine",
-        "views": 23836,
-        "likes": 459,
-        "channel": "Kiyoko Beauty"
+        "title": "skincare routine │ korean skincare, glassy + glowy skin, what i use for acne prone skin",
+        "views": 72666,
+        "likes": 2400,
+        "channel": "nicole hong"
       },
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
-        "title": "how to get GLASS skin *for beginners* | affordable skincare routine + best korean skincare products",
-        "views": 1226775,
-        "likes": 34000,
-        "channel": "kelly"
+        "title": "Korean Skincare Must-Haves — The 5 Products Koreans Actually Use",
+        "views": 118123,
+        "likes": 5700,
+        "channel": "K-bestie, Jin"
+      },
+      {
+        "platform": "youtube",
+        "keyword": "korean skincare routine",
+        "title": "A SIMPLE AM & PM Korean Skincare Routine that ACTUALLY Works for Mature Skin",
+        "views": 39058,
+        "likes": 1500,
+        "channel": "One Eye Beauty"
+      },
+      {
+        "platform": "youtube",
+        "keyword": "korean skincare routine",
+        "title": "5AM slow morning routine | Living alone in Korea VLOG | korean skincare routine, typical office day",
+        "views": 3935228,
+        "likes": 82000,
+        "channel": "SunnyVlog 산니"
       },
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
         "title": "Korean skincare products + simple routine for beginners (each skin type)",
-        "views": 1266908,
+        "views": 1266934,
         "likes": 40000,
         "channel": "blueyoobin"
       },
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
-        "title": "skincare routine │ korean skincare, glassy + glowy skin, what i use for acne prone skin",
-        "views": 881030,
-        "likes": 24000,
-        "channel": "nicole hong"
+        "title": "how to get GLASS skin *for beginners* | affordable skincare routine + best korean skincare products",
+        "views": 1227034,
+        "likes": 34000,
+        "channel": "kelly"
       },
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
         "title": "I Tried A 10-Step Korean Skincare Routine For A Month",
-        "views": 9667220,
+        "views": 9667229,
         "likes": 246000,
         "channel": "Safiya Nygaard"
       },
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
-        "title": "best KOREAN GLASS SKIN routine you've EVER SEEN in your ENTIRE LIFE ( 5 year tested & sponsor-free )",
-        "views": 2040428,
-        "likes": 94000,
-        "channel": "taeveniti"
-      },
-      {
-        "platform": "youtube",
-        "keyword": "korean skincare routine",
-        "title": "How to Layer Your FULL Skincare Routine with Viral Korean Skincare 2025! AM & PM",
-        "views": 74791,
-        "likes": 2700,
-        "channel": "IAMKARENO"
-      },
-      {
-        "platform": "youtube",
-        "keyword": "korean skincare routine",
-        "title": "A SIMPLE AM & PM Korean Skincare Routine that ACTUALLY Works for Mature Skin",
-        "views": 39038,
-        "likes": 1500,
-        "channel": "One Eye Beauty"
+        "title": "skincare routine │ korean skincare, glassy + glowy skin, what i use for acne prone skin",
+        "views": 881044,
+        "likes": 24000,
+        "channel": "nicole hong"
       },
       {
         "platform": "youtube",
         "keyword": "kbeauty haul",
-        "title": "The only Kbeauty Skincare You Need! | Amazon Prime Recs! (JUNE 23~26)",
-        "views": 12541,
-        "likes": 496,
-        "channel": "Soo Beauty 수뷰티 "
+        "title": "Affordable YesStyle K-Beauty Haul 🎀 Best Korean Makeup Finds 2025",
+        "views": 6895,
+        "likes": 201,
+        "channel": "kaisametrine"
       },
       {
         "platform": "youtube",
         "keyword": "kbeauty haul",
-        "title": "$300 aesthetic makeup skincare haul 🩰🎀༘ kbeauty cbeauty unboxing ⭑ | rom&nd, judydoll, dasique,etc",
-        "views": 24245,
-        "likes": 766,
-        "channel": "Dailyofbee"
+        "title": "Everything I Bought at Olive Young In Korea! Korean Skincare Haul",
+        "views": 44069,
+        "likes": 2100,
+        "channel": "James Welsh"
       },
       {
         "platform": "youtube",
         "keyword": "kbeauty haul",
-        "title": "$300 YESSTYLE k-beauty haul; brand new releases & viral products",
-        "views": 96779,
-        "likes": 3200,
-        "channel": "janna ��᪥⋆. ݁"
+        "title": "viral KBEAUTY HAUL ft.yesstyle  🎀 it girl essentials *pinterest inspired* cosrx, romand, etude..etc",
+        "views": 264329,
+        "likes": 9600,
+        "channel": "urmomsushi"
       },
       {
         "platform": "youtube",
         "keyword": "kbeauty haul",
         "title": "summer kbeauty shopping haul 🪽🧼 etude princess collection, skincare for oily combi skin, repurchases",
-        "views": 5915,
+        "views": 5916,
         "likes": 250,
         "channel": "Dica"
+      },
+      {
+        "platform": "youtube",
+        "keyword": "kbeauty haul",
+        "title": "Testing The HIGHEST RATED K-Beauty Products! Are They ACTUALLY Good?",
+        "views": 10093,
+        "likes": 719,
+        "channel": "Roxxsaurus"
       },
       {
         "platform": "youtube",
@@ -1178,18 +1190,10 @@
       {
         "platform": "youtube",
         "keyword": "kbeauty haul",
-        "title": "Everything I Bought at Olive Young In Korea! Korean Skincare Haul",
-        "views": 44057,
-        "likes": 2100,
-        "channel": "James Welsh"
-      },
-      {
-        "platform": "youtube",
-        "keyword": "kbeauty haul",
-        "title": "Testing The HIGHEST RATED K-Beauty Products! Are They ACTUALLY Good?",
-        "views": 9783,
-        "likes": 702,
-        "channel": "Roxxsaurus"
+        "title": "$300 aesthetic makeup skincare haul 🩰🎀༘ kbeauty cbeauty unboxing ⭑ | rom&nd, judydoll, dasique,etc",
+        "views": 24249,
+        "likes": 766,
+        "channel": "Dailyofbee"
       }
     ],
     "x": [
@@ -1459,37 +1463,6 @@
     ],
     "xiaohongshu": [],
     "reddit": [],
-    "google": [
-      {
-        "platform": "google_trends",
-        "keyword": "korean skincare",
-        "interest": 28,
-        "geo": "global"
-      },
-      {
-        "platform": "google_trends",
-        "keyword": "k-beauty brands",
-        "interest": 0,
-        "geo": "global"
-      },
-      {
-        "platform": "google_trends",
-        "keyword": "cica cream",
-        "interest": 5,
-        "geo": "global"
-      },
-      {
-        "platform": "google_trends",
-        "keyword": "where to buy korean skincare",
-        "interest": 0,
-        "geo": "global"
-      },
-      {
-        "platform": "google_trends",
-        "keyword": "korean beauty products",
-        "interest": 2,
-        "geo": "global"
-      }
-    ]
+    "google": []
   }
 }
