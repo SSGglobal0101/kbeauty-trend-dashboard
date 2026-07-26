@@ -45,6 +45,7 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
 .tag-amazon { background: #fff8e1; color: #f57f17; }
 .tag-xhs { background: #fde8e8; color: #c0392b; }
 .tag-reddit { background: #fff0e8; color: #e05a00; }
+.tag-x { background: #e8f0fe; color: #1a73e8; }
 .platform-empty { font-size: 11px; color: #ccc; font-style: italic; }
 .platform-sub { font-size: 10px; color: #bbb; margin-top: 8px; padding-top: 8px; border-top: 1px solid #f0f0ec; }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -235,10 +236,10 @@ body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f7f7f5; co
 
 <div id="page-calendar" class="page">
   <div class="cal-search-wrap">
-    <input class="cal-input" id="dateInput" type="text" placeholder="날짜 입력 — 예: 7/25 · 725 · 2026-07-25" maxlength="20"/>
+    <input class="cal-input" id="dateInput" type="text" placeholder="날짜 입력 — 예: 7/26 · 726 · 2026-07-26" maxlength="20"/>
     <button class="cal-btn" onclick="searchDate()">검색</button>
   </div>
-  <div class="cal-hint">※ 형식: 2026-07-25 · 7/25 · 725 모두 가능 · 엔터키로 검색</div>
+  <div class="cal-hint">※ 형식: 2026-07-26 · 7/26 · 726 모두 가능 · 엔터키로 검색</div>
   <div class="cal-nav">
     <button class="cal-nav-btn" onclick="changeMonth(-1)">← 이전</button>
     <div class="cal-nav-title" id="calTitle"></div>
@@ -330,17 +331,19 @@ function renderDashboard(data){
   document.getElementById('metricGrid').innerHTML=`
     <div class="metric"><div class="metric-label">수집 데이터 수 <span class="tip" data-tip="8개 플랫폼에서 수집된 게시물·영상·댓글·상품의 총 개수">?</span></div><div class="metric-val">${s.total_keywords||0}</div><div class="metric-sub">${s.platforms||8}개 플랫폼</div></div>
     <div class="metric"><div class="metric-label">"where to buy" <span class="tip" data-tip="Google Trends의 'where to buy korean skincare' 7일 평균 관심도. 높을수록 구매 의도 높음">?</span></div><div class="metric-val">${wtb>=1000?(wtb/1000).toFixed(1)+'K':wtb||'-'}</div><div class="metric-sub">구글 검색 관심도</div></div>
-    <div class="metric"><div class="metric-label">TOP 브랜드 <span class="tip" data-tip="8개 플랫폼 데이터에서 브랜드명 언급 횟수를 좋아요·조회수·리뷰수로 가중치 집계">?</span></div><div class="metric-val">${(data.brands||[]).length}</div><div class="metric-sub">이번주 집계</div></div>
-    <div class="metric"><div class="metric-label">바이럴 성분 <span class="tip" data-tip="YouTube·X·Amazon·Reddit 데이터에서 성분 키워드 언급 횟수 집계">?</span></div><div class="metric-val">${(data.ingredients||[]).length}</div><div class="metric-sub">급상승 중</div></div>
-    <div class="metric"><div class="metric-label">Reddit 댓글 <span class="tip" data-tip="r/SkincareAddiction·r/AsianBeauty·r/kbeauty 등에서 수집된 후기·동조 댓글 수">?</span></div><div class="metric-val">${p.reddit?.total||0}</div><div class="metric-sub">후기·동조 댓글</div></div>
-    <div class="metric"><div class="metric-label">샤오홍슈 <span class="tip" data-tip="샤오홍슈(RedNote)에서 K-뷰티 키워드로 수집된 포스트 수. 브랜드 언급량 기반">?</span></div><div class="metric-val">${p.xiaohongshu?.total||0}</div><div class="metric-sub">브랜드 언급</div></div>`;
+    <div class="metric"><div class="metric-label">TOP 브랜드 <span class="tip" data-tip="8개 플랫폼 데이터에서 브랜드명 언급 횟수를 가중치 집계">?</span></div><div class="metric-val">${(data.brands||[]).length}</div><div class="metric-sub">이번주 집계</div></div>
+    <div class="metric"><div class="metric-label">바이럴 성분 <span class="tip" data-tip="YouTube·X·Amazon·Reddit에서 성분 키워드 언급 횟수 집계">?</span></div><div class="metric-val">${(data.ingredients||[]).length}</div><div class="metric-sub">급상승 중</div></div>
+    <div class="metric"><div class="metric-label">Reddit 댓글 <span class="tip" data-tip="r/SkincareAddiction·r/AsianBeauty·r/kbeauty 등 상위 댓글 수집">?</span></div><div class="metric-val">${p.reddit?.total||0}</div><div class="metric-sub">후기·동조 댓글</div></div>
+    <div class="metric"><div class="metric-label">샤오홍슈 <span class="tip" data-tip="샤오홍슈에서 K-뷰티 키워드로 수집된 포스트 수">?</span></div><div class="metric-val">${p.xiaohongshu?.total||0}</div><div class="metric-sub">브랜드 언급</div></div>`;
 
+  // 플랫폼 키워드 — X는 실제 수집된 해시태그 사용
+  const xHashtags=(p.x?.top_hashtags||[]).map(t=>({text:'#'+t,kw:t,cls:'tag-x'}));
   const xhsBrands=(p.xiaohongshu?.brand_mentions||[]).slice(0,5).map(b=>({text:b.name,kw:b.name,cls:'tag-xhs'}));
   const platforms=[
     {key:'instagram',name:'📸 Instagram',tags:(p.instagram?.top_hashtags||[]).map(t=>({text:'#'+t,kw:t,cls:'tag-hot'}))},
     {key:'tiktok',name:'🎵 TikTok',tags:(p.tiktok?.top_keywords||[]).map(t=>({text:t,kw:t,cls:'tag-rising'}))},
     {key:'youtube',name:'▶️ YouTube',tags:(p.youtube?.top_keywords||[]).map(t=>({text:t,kw:t,cls:'tag-new'}))},
-    {key:'x',name:'✖️ X',tags:(p.x?.top_keywords||[]).map(t=>({text:'#'+t.replace(/\s/g,''),kw:t,cls:'tag-rising'}))},
+    {key:'x',name:'✖️ X',tags:xHashtags.length>0?xHashtags:(p.x?.top_keywords||[]).map(t=>({text:'#'+t.replace(/\s/g,''),kw:t,cls:'tag-x'})),sub:xHashtags.length>0?'실제 트윗 해시태그 추출':''},
     {key:'google_trends',name:'🔍 Google Trends',tags:(p.google_trends?.keywords||[]).map(t=>({text:t,kw:t,cls:'tag-new'}))},
     {key:'amazon',name:'📦 Amazon',tags:(p.amazon?.top_keywords||[]).map(t=>({text:t,kw:t,cls:'tag-amazon'}))},
     {key:'xiaohongshu',name:'📕 샤오홍슈',tags:xhsBrands.length>0?xhsBrands:[{text:'kbeauty',kw:'kbeauty',cls:'tag-xhs'}],sub:'브랜드 언급량 기반'},
@@ -353,23 +356,44 @@ function renderDashboard(data){
       ${pl.sub?`<div class="platform-sub">${pl.sub}</div>`:''}
     </div>`).join('');
 
+  // 브랜드
   const brands=data.brands||[],half=Math.ceil(brands.length/2);
   document.getElementById('brandRising').innerHTML=brands.slice(0,half).map((b,i)=>`<div class="box-row"><span class="brand-name">${i+1}. ${b.name}</span><span class="brand-score">▲ ${b.score}</span></div>`).join('')||'<div class="no-data">수집 데이터 분석 중</div>';
   document.getElementById('brandSteady').innerHTML=brands.slice(half).map((b,i)=>`<div class="box-row"><span class="brand-name">${i+half+1}. ${b.name}</span><span class="brand-score">▲ ${b.score}</span></div>`).join('')||'<div class="no-data">수집 데이터 분석 중</div>';
 
-  const hC=['#f0f0ec','#b5d4f4','#378add','#0c447c','#d85a30'];
-  const hP=[['#f0f0ec','#b5d4f4','#378add','#0c447c'],['#b5d4f4','#378add','#0c447c','#0c447c'],['#f0f0ec','#f0f0ec','#b5d4f4','#d85a30'],['#f0f0ec','#b5d4f4','#378add','#d85a30'],['#378add','#378add','#0c447c','#0c447c']];
-  const hL=['8주↑','5주↑','급상승','신규','4주↑'],hLC=['#27ae60','#27ae60','#c0392b','#c0392b','#27ae60'];
-  document.getElementById('heatmapBox').innerHTML=`
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px;">${['미미','낮음','보통','높음','급상승'].map((l,i)=>`<span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#888;"><span style="width:10px;height:10px;border-radius:2px;background:${hC[i]};display:inline-block;"></span>${l}</span>`).join('')}</div>
-    <div style="display:flex;gap:3px;padding-left:118px;margin-bottom:6px;">${['3주전','2주전','1주전','이번주'].map(w=>`<div style="flex:1;font-size:10px;color:#bbb;text-align:center;">${w}</div>`).join('')}</div>
-    ${brands.slice(0,5).map((b,i)=>`<div class="tl-row"><div class="tl-name">${b.name}</div><div class="tl-bars">${(hP[i]||hP[0]).map(c=>`<div class="tl-bar" style="background:${c};"></div>`).join('')}</div><div class="tl-label" style="color:${hLC[i]||'#27ae60'};font-size:10px;">${hL[i]||'상승'}</div></div>`).join('')}`;
+  // 히트맵 — latest.json의 heatmap 데이터 사용 (동적)
+  const heatmapData=data.heatmap||[];
+  const heatColors=['#f0f0ec','#b5d4f4','#378add','#0c447c','#d85a30'];
+  if(heatmapData.length>0){
+    document.getElementById('heatmapBox').innerHTML=`
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px;">${['미미','낮음','보통','높음','급상승'].map((l,i)=>`<span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#888;"><span style="width:10px;height:10px;border-radius:2px;background:${heatColors[i]};display:inline-block;"></span>${l}</span>`).join('')}</div>
+      <div style="display:flex;gap:3px;padding-left:118px;margin-bottom:6px;">${['3주전','2주전','1주전','이번주'].map(w=>`<div style="flex:1;font-size:10px;color:#bbb;text-align:center;">${w}</div>`).join('')}</div>
+      ${heatmapData.map(h=>`<div class="tl-row"><div class="tl-name">${h.name}</div><div class="tl-bars">${h.pattern.map(c=>`<div class="tl-bar" style="background:${c};"></div>`).join('')}</div><div class="tl-label" style="color:${h.label_color};font-size:10px;">${h.label}</div></div>`).join('')}`;
+  } else {
+    // fallback: 브랜드 스코어 기반 동적 생성
+    const maxScore=Math.max(...brands.map(b=>b.score),1);
+    document.getElementById('heatmapBox').innerHTML=`
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px;">${['미미','낮음','보통','높음','급상승'].map((l,i)=>`<span style="display:flex;align-items:center;gap:4px;font-size:10px;color:#888;"><span style="width:10px;height:10px;border-radius:2px;background:${heatColors[i]};display:inline-block;"></span>${l}</span>`).join('')}</div>
+      <div style="display:flex;gap:3px;padding-left:118px;margin-bottom:6px;">${['3주전','2주전','1주전','이번주'].map(w=>`<div style="flex:1;font-size:10px;color:#bbb;text-align:center;">${w}</div>`).join('')}</div>
+      ${brands.slice(0,5).map(b=>{
+        const r=b.score/maxScore;
+        let pattern,label,lc;
+        if(r>=0.8){pattern=['#b5d4f4','#378add','#0c447c','#0c447c'];label='급상승';lc='#c0392b';}
+        else if(r>=0.6){pattern=['#f0f0ec','#b5d4f4','#378add','#0c447c'];label='상승세';lc='#27ae60';}
+        else if(r>=0.4){pattern=['#f0f0ec','#f0f0ec','#b5d4f4','#378add'];label='보통';lc='#888';}
+        else if(r>=0.2){pattern=['#f0f0ec','#f0f0ec','#f0f0ec','#b5d4f4'];label='낮음';lc='#bbb';}
+        else{pattern=['#f0f0ec','#f0f0ec','#f0f0ec','#f0f0ec'];label='미미';lc='#ccc';}
+        return `<div class="tl-row"><div class="tl-name">${b.name}</div><div class="tl-bars">${pattern.map(c=>`<div class="tl-bar" style="background:${c};"></div>`).join('')}</div><div class="tl-label" style="color:${lc};font-size:10px;">${label}</div></div>`;
+      }).join('')}`;
+  }
 
+  // 시그널 — SNS 수집 기반 (latest.json에서 읽기)
   const signals=data.signals||[];
   document.getElementById('signalList').innerHTML=signals.length>0
     ?signals.map(s=>`<div class="signal-row"><span class="sig-badge ${s.type}">${s.badge}</span><div class="sig-text">${s.text}</div><div class="sig-dday">${s.dday}</div></div>`).join('')
-    :'<div class="no-data">시그널 수집 중...</div>';
+    :'<div class="no-data">SNS 데이터 분석 중...</div>';
 
+  // 성분
   const ings=data.ingredients||[],maxIng=Math.max(...ings.map(i=>i.score),1);
   document.getElementById('ingGrid').innerHTML=ings.length>0
     ?ings.map(ing=>`<div class="ing-card"><div class="ing-name">${ing.name}</div><div class="ing-bar-wrap"><div class="ing-bar" style="width:${Math.round(ing.score/maxIng*100)}%"></div></div><div class="ing-stats"><span>${ing.score}</span><span style="color:#c0392b;font-weight:500;">+${Math.round(ing.score/maxIng*100)}%</span></div></div>`).join('')
@@ -413,7 +437,6 @@ function renderRegions(data){
       }).join('')
       :'<div class="no-data">인플루언서 수집 중...</div>';
 
-    // 중화권만 샤오홍슈 브랜드 섹션 추가
     const xhsSection=key==='zh'&&xhsBrands.length>0?`
       <div class="xhs-box" style="margin-bottom:12px;">
         <div class="xhs-header">📕 샤오홍슈 브랜드 언급량 TOP</div>
