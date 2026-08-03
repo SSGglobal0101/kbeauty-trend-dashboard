@@ -11,7 +11,6 @@ TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 NOW = datetime.now(timezone.utc)
 BASE = "https://api.apify.com/v2"
 
-# ── 키워드 설정 ────────────────────────────────────────────
 INSTAGRAM_HASHTAGS = [
     "kbeauty", "koreanskincare", "koreanbeauty", "kbeautyhaul"
 ]
@@ -34,8 +33,9 @@ GOOGLE_TRENDS_KEYWORDS = [
 XIAOHONGSHU_KEYWORDS = [
     "kbeauty", "korean skincare", "Anua", "Cosrx"
 ]
-REDDIT_SUBREDDITS = [
-    "SkincareAddiction", "AsianBeauty", "kbeauty"
+REDDIT_KEYWORDS = [
+    "korean skincare routine", "kbeauty recommendation",
+    "korean beauty haul", "kbeauty where to buy"
 ]
 BRAND_KEYWORDS = [
     "anua", "cosrx", "laneige", "beauty of joseon", "tamburins",
@@ -54,18 +54,17 @@ REGION_GEO = {
     "zh": "SG", "sea": "TH"
 }
 
-# 구매처 공백 — 권역당 2개로 축소
 GAP_BRAND_QUERIES = {
-    "us":  [{"brand": "Skin1004", "query": "Skin1004 USA"},
-            {"brand": "Anua", "query": "Anua USA"}],
-    "eu":  [{"brand": "Anua", "query": "Anua Europe"},
-            {"brand": "Round Lab", "query": "Round Lab Europe"}],
-    "me":  [{"brand": "Tamburins", "query": "Tamburins UAE"},
-            {"brand": "Anua", "query": "Anua Middle East"}],
-    "zh":  [{"brand": "Anua", "query": "Anua Singapore"},
-            {"brand": "Tamburins", "query": "Tamburins Singapore"}],
-    "sea": [{"brand": "Romand", "query": "Romand Thailand"},
-            {"brand": "Anua", "query": "Anua Vietnam"}]
+    "us":  [{"brand": "Skin1004", "query": "Skin1004"},
+            {"brand": "Anua", "query": "Anua skincare"}],
+    "eu":  [{"brand": "Anua", "query": "Anua skincare"},
+            {"brand": "Round Lab", "query": "Round Lab"}],
+    "me":  [{"brand": "Tamburins", "query": "Tamburins"},
+            {"brand": "Anua", "query": "Anua skincare"}],
+    "zh":  [{"brand": "Anua", "query": "Anua skincare"},
+            {"brand": "Tamburins", "query": "Tamburins"}],
+    "sea": [{"brand": "Romand", "query": "Romand makeup"},
+            {"brand": "Anua", "query": "Anua skincare"}]
 }
 
 INFLUENCER_HASHTAGS = {
@@ -84,7 +83,7 @@ REGION_INFO = {
     "sea": {"flag": "🌏", "title": "동남아 — 태국 / 베트남 / 말레이시아", "sub": "K-팝 연동 강함 · 가성비 민감", "priority": "주력"}
 }
 
-def run_actor(actor_id, input_data, timeout=120, memory=256):
+def run_actor(actor_id, input_data, timeout=150, memory=256):
     params = {"token": APIFY_TOKEN}
     actor_id_safe = actor_id.replace("/", "~")
     try:
@@ -173,9 +172,10 @@ def collect_x():
     results = []
     all_hashtags = []
     for kw in X_KEYWORDS:
+        # timeout 200초로 증가
         data = run_actor("apidojo/tweet-scraper", {
             "searchTerms": [kw], "maxTweets": 8, "onlyVerifiedUsers": False
-        })
+        }, timeout=200)
         for item in data[:8]:
             text = item.get("text", "")
             hashtags = re.findall(r'#(\w+)', text)
@@ -214,12 +214,13 @@ def collect_xiaohongshu():
     results = []
     for kw in XIAOHONGSHU_KEYWORDS:
         data = run_actor("zhorex/rednote-xiaohongshu-scraper", {
-            "mode": "search", "searchQuery": kw,
-            "maxResults": 8, "filterByMinLikes": 50
+            "keyword": kw,
+            "maxItems": 8,
+            "sortType": "popular"
         })
         for item in data[:8]:
             brand_found = None
-            title = item.get("title", "").lower()
+            title = (item.get("title","") + " " + item.get("desc","")).lower()
             for brand in BRAND_KEYWORDS:
                 if brand in title:
                     brand_found = brand
@@ -227,8 +228,8 @@ def collect_xiaohongshu():
             results.append({
                 "platform": "xiaohongshu", "keyword": kw,
                 "title": item.get("title", "")[:80],
-                "likes": item.get("likes", 0),
-                "comments": item.get("comments", 0),
+                "likes": item.get("likes", item.get("likedCount", 0)),
+                "comments": item.get("comments", item.get("commentCount", 0)),
                 "brand_mentioned": brand_found,
             })
     print(f"  → {len(results)}개")
@@ -238,26 +239,33 @@ def collect_reddit():
     print("🔴 Reddit 수집 중...")
     results = []
     trending_topics = []
-    for subreddit in REDDIT_SUBREDDITS:
-        data = run_actor("clearpath/reddit-post-comments-b", {
-            "subreddit": subreddit, "sort": "hot",
-            "maxPosts": 3, "maxComments": 15, "sortComments": "top"
+    for kw in REDDIT_KEYWORDS:
+        data = run_actor("clearpath/reddit-post-comments-bulk-scraper", {
+            "keyword": kw,
+            "subreddits": ["SkincareAddiction", "AsianBeauty", "kbeauty"],
+            "maxPosts": 3,
+            "maxComments": 10,
+            "sortBy": "top",
+            "timeFilter": "week"
         })
-        for item in data[:18]:
-            text = (item.get("body", "") or item.get("text", "") or "").lower()
-            if not text:
+        for item in data[:15]:
+            text = (item.get("body","") or item.get("selftext","") or
+                    item.get("text","") or item.get("title","") or "").lower()
+            if not text or len(text) < 10:
                 continue
             brands_found = [b for b in BRAND_KEYWORDS if b in text]
             ings_found = [i for i in INGREDIENT_KEYWORDS if i in text]
             gap_signal = any(kw in text for kw in [
                 "where to buy", "can't find", "out of stock",
-                "not available", "sold out"
+                "not available", "sold out", "where can i"
             ])
             words = re.findall(r'\b[a-z]{4,}\b', text)
             trending_topics.extend(words)
             results.append({
-                "platform": "reddit", "subreddit": subreddit,
-                "text": text[:200], "score": item.get("score", 0),
+                "platform": "reddit",
+                "subreddit": item.get("subreddit",""),
+                "text": text[:200],
+                "score": item.get("score", item.get("ups", 0)),
                 "brands_mentioned": brands_found,
                 "ingredients_mentioned": ings_found,
                 "gap_signal": gap_signal,
@@ -269,7 +277,9 @@ def collect_google_trends(geo="", label="글로벌"):
     print(f"🔍 Google Trends 수집 중... ({label})")
     try:
         from pytrends.request import TrendReq
-        pytrends = TrendReq(hl="en-US", tz=0)
+        # rate limit 방지 위해 sleep 추가
+        time.sleep(3)
+        pytrends = TrendReq(hl="en-US", tz=0, timeout=(10,25), retries=2, backoff_factor=0.5)
         results = []
         pytrends.build_payload(GOOGLE_TRENDS_KEYWORDS[:4], timeframe="now 7-d", geo=geo)
         interest = pytrends.interest_over_time()
@@ -288,16 +298,14 @@ def collect_google_trends(geo="", label="글로벌"):
 
 def collect_region_brands():
     """권역별 브랜드 — 주 2회만 실행 (월·목)"""
-    day_of_week = NOW.weekday()  # 0=월, 3=목
+    day_of_week = NOW.weekday()
     if day_of_week not in [0, 3]:
-        print(f"🌍 권역별 브랜드 — 오늘은 SKIP (월·목만 실행, 오늘은 {['월','화','수','목','금','토','일'][day_of_week]})")
+        print(f"🌍 권역별 브랜드 — SKIP ({['월','화','수','목','금','토','일'][day_of_week]})")
         return {}
-
     print("🌍 권역별 브랜드 트렌드 수집 중...")
     region_brands = {}
     try:
         from pytrends.request import TrendReq
-        # 상위 10개 브랜드만, 5개씩 2 chunk
         top_brands = BRAND_KEYWORDS[:10]
         chunks = [top_brands[i:i+5] for i in range(0, len(top_brands), 5)]
         for region, geo in REGION_GEO.items():
@@ -305,7 +313,8 @@ def collect_region_brands():
             brand_scores = {}
             for chunk in chunks:
                 try:
-                    pytrends = TrendReq(hl="en-US", tz=0)
+                    time.sleep(5)  # rate limit 방지
+                    pytrends = TrendReq(hl="en-US", tz=0, timeout=(10,25), retries=1)
                     pytrends.build_payload(chunk, timeframe="now 7-d", geo=geo)
                     interest = pytrends.interest_over_time()
                     if not interest.empty:
@@ -314,12 +323,12 @@ def collect_region_brands():
                                 score = int(interest[brand].mean())
                                 if score > 0:
                                     brand_scores[brand] = score
-                    time.sleep(2)
                 except Exception as e:
                     print(f"    [SKIP] {chunk}: {e}")
             top = sorted(brand_scores.items(), key=lambda x: x[1], reverse=True)[:5]
             region_brands[region] = [{"name": k, "score": v} for k, v in top]
             print(f"    → {[b['name'] for b in region_brands[region]]}")
+            time.sleep(5)
     except Exception as e:
         print(f"  [SKIP]: {e}")
     return region_brands
@@ -328,9 +337,8 @@ def collect_gap_brands(reddit_data):
     """구매처 공백 — 주 2회만 실행 (월·목)"""
     day_of_week = NOW.weekday()
     if day_of_week not in [0, 3]:
-        print(f"🔍 구매처 공백 — 오늘은 SKIP (월·목만 실행)")
+        print(f"🔍 구매처 공백 — SKIP ({['월','화','수','목','금','토','일'][day_of_week]})")
         return {}
-
     print("🔍 구매처 공백 브랜드 수집 중...")
     gap_data = {}
     reddit_gaps = {}
@@ -344,7 +352,8 @@ def collect_gap_brands(reddit_data):
             region_gaps = []
             for q in queries:
                 try:
-                    pytrends = TrendReq(hl="en-US", tz=0)
+                    time.sleep(4)
+                    pytrends = TrendReq(hl="en-US", tz=0, timeout=(10,25), retries=1)
                     pytrends.build_payload([q["query"]], timeframe="now 30-d", geo="")
                     interest = pytrends.interest_over_time()
                     score = 0
@@ -359,7 +368,6 @@ def collect_gap_brands(reddit_data):
                             "search": f"\"{q['query']}\" 관심도 {score}",
                             "reason": "글로벌 구매처 부재 — 직구만 가능",
                         })
-                    time.sleep(1)
                 except Exception as e:
                     print(f"    [SKIP] {q['query']}: {e}")
             region_gaps.sort(key=lambda x: x["score"], reverse=True)
@@ -372,9 +380,8 @@ def collect_influencers():
     """인플루언서 — 주 2회만 실행 (화·금)"""
     day_of_week = NOW.weekday()
     if day_of_week not in [1, 4]:
-        print(f"👤 인플루언서 — 오늘은 SKIP (화·금만 실행)")
+        print(f"👤 인플루언서 — SKIP ({['월','화','수','목','금','토','일'][day_of_week]})")
         return {}
-
     print("👤 인플루언서 수집 중...")
     influencers = {r: [] for r in REGION_GEO.keys()}
     for region, hashtags in INFLUENCER_HASHTAGS.items():
@@ -438,8 +445,6 @@ def collect_xiaohongshu_brands(xhs_data):
 
 def extract_sns_signals(instagram, tiktok, x_data, reddit_data, x_hashtags, reddit_topics, brand_counts, ingredient_counts):
     signals = []
-
-    # Instagram 급상승 해시태그
     all_ig_tags = []
     for item in instagram:
         all_ig_tags.extend(item.get("caption_hashtags", []))
@@ -450,7 +455,6 @@ def extract_sns_signals(instagram, tiktok, x_data, reddit_data, x_hashtags, redd
         signals.append({"type": "sig-social", "badge": "Instagram",
                         "text": f"인스타 급상승 해시태그 — #{' #'.join(top_ig_tags[:3])}", "dday": "이번 주"})
 
-    # TikTok 바이럴
     all_tt_tags = []
     for item in tiktok:
         all_tt_tags.extend(item.get("hashtags", []))
@@ -461,12 +465,10 @@ def extract_sns_signals(instagram, tiktok, x_data, reddit_data, x_hashtags, redd
         signals.append({"type": "sig-social", "badge": "TikTok",
                         "text": f"TikTok 바이럴 태그 — #{' #'.join(top_tt_tags[:3])}", "dday": "진행 중"})
 
-    # X 트렌딩
     if x_hashtags:
         signals.append({"type": "sig-social", "badge": "X 트렌드",
                         "text": f"X(트위터) 급상승 — #{' #'.join(x_hashtags[:3])}", "dday": "오늘"})
 
-    # Reddit 화제
     stop_words = {"that","this","with","have","from","they","what","your","been","will",
                   "just","like","skin","care","korean","beauty","product","good","really","also"}
     filtered = [w for w in reddit_topics if w not in stop_words and len(w) > 4]
@@ -476,7 +478,6 @@ def extract_sns_signals(instagram, tiktok, x_data, reddit_data, x_hashtags, redd
         signals.append({"type": "sig-news", "badge": "Reddit",
                         "text": f"Reddit 화제 키워드 — {', '.join(top_reddit)}", "dday": "이번 주"})
 
-    # Reddit 구매처 공백
     gap_brands_reddit = {}
     for item in reddit_data:
         if item.get("gap_signal"):
@@ -487,20 +488,19 @@ def extract_sns_signals(instagram, tiktok, x_data, reddit_data, x_hashtags, redd
         signals.append({"type": "sig-news", "badge": "구매처",
                         "text": f"Reddit에서 '{top_gap.title()}' 구매처 문의 급증", "dday": "진행 중"})
 
-    # 급상승 성분
     top_ing = sorted([(k,v) for k,v in ingredient_counts.items() if v>0], key=lambda x: x[1], reverse=True)
     if top_ing:
         signals.append({"type": "sig-ingredient", "badge": "성분",
                         "text": f"{top_ing[0][0].title()} — 이번 주 SNS 전반 언급 급증 (스코어: {top_ing[0][1]})", "dday": "진행 중"})
 
-    # 급상승 브랜드
     top_brand = sorted([(k,v) for k,v in brand_counts.items() if v>0], key=lambda x: x[1], reverse=True)
     if top_brand:
         signals.append({"type": "sig-social", "badge": "브랜드",
                         "text": f"{top_brand[0][0].title()} — 이번 주 8개 플랫폼 언급 1위 (스코어: {top_brand[0][1]})", "dday": "이번 주"})
 
     if not signals:
-        signals = [{"type": "sig-social", "badge": "소셜", "text": "데이터 수집 중 — 잠시 후 업데이트됩니다", "dday": "-"}]
+        signals = [{"type": "sig-social", "badge": "소셜",
+                    "text": "데이터 수집 중 — 잠시 후 업데이트됩니다", "dday": "-"}]
     return signals
 
 def extract_heatmap_data(brands):
@@ -509,15 +509,15 @@ def extract_heatmap_data(brands):
     for brand in brands[:5]:
         r = brand["score"] / max_score
         if r >= 0.8:
-            pattern = ["#b5d4f4","#378add","#0c447c","#0c447c"]; label="급상승"; lc="#c0392b"
+            pattern=["#b5d4f4","#378add","#0c447c","#0c447c"]; label="급상승"; lc="#c0392b"
         elif r >= 0.6:
-            pattern = ["#f0f0ec","#b5d4f4","#378add","#0c447c"]; label="상승세"; lc="#27ae60"
+            pattern=["#f0f0ec","#b5d4f4","#378add","#0c447c"]; label="상승세"; lc="#27ae60"
         elif r >= 0.4:
-            pattern = ["#f0f0ec","#f0f0ec","#b5d4f4","#378add"]; label="보통"; lc="#888"
+            pattern=["#f0f0ec","#f0f0ec","#b5d4f4","#378add"]; label="보통"; lc="#888"
         elif r >= 0.2:
-            pattern = ["#f0f0ec","#f0f0ec","#f0f0ec","#b5d4f4"]; label="낮음"; lc="#bbb"
+            pattern=["#f0f0ec","#f0f0ec","#f0f0ec","#b5d4f4"]; label="낮음"; lc="#bbb"
         else:
-            pattern = ["#f0f0ec","#f0f0ec","#f0f0ec","#f0f0ec"]; label="미미"; lc="#ccc"
+            pattern=["#f0f0ec","#f0f0ec","#f0f0ec","#f0f0ec"]; label="미미"; lc="#ccc"
         heatmap.append({"name": brand["name"], "score": brand["score"],
                         "pattern": pattern, "label": label, "label_color": lc})
     return heatmap
@@ -603,7 +603,8 @@ def aggregate(instagram, tiktok, youtube, x_data, amazon, google, reddit_data, x
     }
 
 def main():
-    print(f"\n🚀 K-Beauty 수집 시작 — {TODAY} ({['월','화','수','목','금','토','일'][NOW.weekday()]})\n")
+    day_name = ['월','화','수','목','금','토','일'][NOW.weekday()]
+    print(f"\n🚀 K-Beauty 수집 시작 — {TODAY} ({day_name})\n")
 
     instagram           = collect_instagram()
     tiktok              = collect_tiktok()
@@ -634,7 +635,7 @@ def main():
             "amazon":        {"total": len(amazon),     "top_keywords": list(set([i["keyword"] for i in amazon]))[:5]},
             "google_trends": {"total": len(google),     "keywords": [i["keyword"] for i in google]},
             "xiaohongshu":   {"total": len(xhs_data),  "top_keywords": XIAOHONGSHU_KEYWORDS[:4], "brand_mentions": xhs_brands},
-            "reddit":        {"total": len(reddit_data),"subreddits": REDDIT_SUBREDDITS},
+            "reddit":        {"total": len(reddit_data),"subreddits": ["SkincareAddiction","AsianBeauty","kbeauty"]},
         },
         "brands": agg["top_brands"],
         "ingredients": agg["top_ingredients"],
