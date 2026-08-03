@@ -1,8 +1,8 @@
 {
   "date": "2026-08-03",
-  "generated_at": "2026-08-03T13:36:10.118916+00:00",
+  "generated_at": "2026-08-03T14:16:55.044722+00:00",
   "summary": {
-    "total_keywords": 94,
+    "total_keywords": 102,
     "platforms": 8,
     "where_to_buy_search": 0
   },
@@ -10,18 +10,18 @@
     "instagram": {
       "total": 40,
       "top_hashtags": [
-        "koreanbeauty",
-        "kbeautyhaul",
+        "koreanskincare",
         "kbeauty",
-        "koreanskincare"
+        "kbeautyhaul",
+        "koreanbeauty"
       ]
     },
     "tiktok": {
       "total": 24,
       "top_keywords": [
-        "korean skincare",
+        "kpop style",
         "kbeauty",
-        "kpop style"
+        "korean skincare"
       ]
     },
     "youtube": {
@@ -33,15 +33,22 @@
       ]
     },
     "x": {
-      "total": 0,
-      "top_hashtags": []
+      "total": 8,
+      "top_hashtags": [
+        "joyiq",
+        "バームトゥフォーム",
+        "レチナールクレンザー",
+        "クレンジングバーム",
+        "クレンジング",
+        "yesstylecodes"
+      ]
     },
     "amazon": {
       "total": 15,
       "top_keywords": [
+        "cica cream",
         "snail mucin serum",
-        "korean skin care",
-        "cica cream"
+        "korean skin care"
       ]
     },
     "google_trends": {
@@ -69,50 +76,42 @@
   },
   "brands": [
     {
-      "name": "anua",
-      "score": 279
-    },
-    {
-      "name": "round lab",
-      "score": 252
-    },
-    {
-      "name": "innisfree",
-      "score": 252
-    },
-    {
-      "name": "medicube",
-      "score": 93
+      "name": "abib",
+      "score": 1200
     },
     {
       "name": "skin1004",
-      "score": 39
+      "score": 46
+    },
+    {
+      "name": "anua",
+      "score": 40
     },
     {
       "name": "romand",
-      "score": 20
+      "score": 37
+    },
+    {
+      "name": "medicube",
+      "score": 29
     },
     {
       "name": "etude",
-      "score": 1
+      "score": 27
+    },
+    {
+      "name": "cosrx",
+      "score": 26
+    },
+    {
+      "name": "purito",
+      "score": 13
     }
   ],
   "ingredients": [
     {
-      "name": "cica",
-      "score": 252
-    },
-    {
-      "name": "vitamin c",
-      "score": 252
-    },
-    {
-      "name": "retinol",
-      "score": 252
-    },
-    {
       "name": "centella",
-      "score": 12
+      "score": 6
     }
   ],
   "signals": [
@@ -125,26 +124,32 @@
     {
       "type": "sig-social",
       "badge": "TikTok",
-      "text": "TikTok 바이럴 태그 — #koreanskincare #kpop #kpopfashion",
+      "text": "TikTok 바이럴 태그 — #koreanskincare #koreanmakeup #kpopfashion",
       "dday": "진행 중"
+    },
+    {
+      "type": "sig-social",
+      "badge": "X 트렌드",
+      "text": "X(트위터) 급상승 — #joyiq #バームトゥフォーム #レチナールクレンザー",
+      "dday": "오늘"
     },
     {
       "type": "sig-ingredient",
       "badge": "성분",
-      "text": "Cica — 이번 주 SNS 전반 언급 급증 (스코어: 252)",
+      "text": "Centella — 이번 주 SNS 전반 언급 급증 (스코어: 6)",
       "dday": "진행 중"
     },
     {
       "type": "sig-social",
       "badge": "브랜드",
-      "text": "Anua — 이번 주 8개 플랫폼 언급 1위 (스코어: 279)",
+      "text": "Abib — 이번 주 8개 플랫폼 언급 1위 (스코어: 1200)",
       "dday": "이번 주"
     }
   ],
   "heatmap": [
     {
-      "name": "anua",
-      "score": 279,
+      "name": "abib",
+      "score": 1200,
       "pattern": [
         "#b5d4f4",
         "#378add",
@@ -153,46 +158,46 @@
       ],
       "label": "급상승",
       "label_color": "#c0392b"
-    },
-    {
-      "name": "round lab",
-      "score": 252,
-      "pattern": [
-        "#b5d4f4",
-        "#378add",
-        "#0c447c",
-        "#0c447c"
-      ],
-      "label": "급상승",
-      "label_color": "#c0392b"
-    },
-    {
-      "name": "innisfree",
-      "score": 252,
-      "pattern": [
-        "#b5d4f4",
-        "#378add",
-        "#0c447c",
-        "#0c447c"
-      ],
-      "label": "급상승",
-      "label_color": "#c0392b"
-    },
-    {
-      "name": "medicube",
-      "score": 93,
-      "pattern": [
-        "#f0f0ec",
-        "#f0f0ec",
-        "#f0f0ec",
-        "#b5d4f4"
-      ],
-      "label": "낮음",
-      "label_color": "#bbb"
     },
     {
       "name": "skin1004",
-      "score": 39,
+      "score": 46,
+      "pattern": [
+        "#f0f0ec",
+        "#f0f0ec",
+        "#f0f0ec",
+        "#f0f0ec"
+      ],
+      "label": "미미",
+      "label_color": "#ccc"
+    },
+    {
+      "name": "anua",
+      "score": 40,
+      "pattern": [
+        "#f0f0ec",
+        "#f0f0ec",
+        "#f0f0ec",
+        "#f0f0ec"
+      ],
+      "label": "미미",
+      "label_color": "#ccc"
+    },
+    {
+      "name": "romand",
+      "score": 37,
+      "pattern": [
+        "#f0f0ec",
+        "#f0f0ec",
+        "#f0f0ec",
+        "#f0f0ec"
+      ],
+      "label": "미미",
+      "label_color": "#ccc"
+    },
+    {
+      "name": "medicube",
+      "score": 29,
       "pattern": [
         "#f0f0ec",
         "#f0f0ec",
@@ -492,52 +497,6 @@
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 40900,
-        "likes": 4074,
-        "hashtags": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "creatorsearchinsights",
-          "makeupproducts",
-          "kbeauty",
-          "koreanmakeup",
-          "makeuprecomendation"
-        ],
-        "text": "korea content soon ahh 🤭!! here are some stand out makeup products i’ll def be repurchasing 🫶 let me know if you’ve tried any of these :)\n\nproducts + timestamps: \n00:13 - @RISKY 리스키 be bold lip gloss (mei + guilty)\n1:00 - huemi melting lip glaze (sepia haze)\n1:35 - @Laka US @Laka mini jelling nde gloss (313 cool ring)\n2:03 - @bringgreen_official bamboo hyalu lip essence \n2:29 - @AOU Cosmetics blush (03 cherry blossom cheeks) \n2:58: @릴리바이레드 luv beam cheek balm (14 rosy beam)\n3:33 - @VDL 브이디엘 cheekstain blusher balm (pale fig balm + peach toast balm) \n4:13 - @Dear.A 디어에이 concealer palette (C05) \n4:56 - @espoir USA be velvet cover cushion (22 petal) \n5:25 - @퓌(fwee) @fwee_makeup_global all day cover black cushion (21N) \n5:51 - @公式 Wonjungyo（ウォンジョンヨ） mascara \n\n#creatorsearchinsights #makeupproducts #kbeauty #koreanmakeup #makeuprecomendation "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 89900,
-        "likes": 6574,
-        "hashtags": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "worththemoney",
-          "koreanskincare",
-          "worthit",
-          "skincaretips",
-          "sensitiveskin"
-        ],
-        "text": "tested almost every korean skincare and these are the ones I trust for sensitive skin 💎\n\nproducts:\n@Dr.Althea US Stretchfit Calming Pad\n@dear, Klairs Blue Youth EGF Activating Drop\n@REJURAN US Dual Effect Ampoule\n@glow aloe barrier support cream\n@celimax.global Pore+Dark Spot Brightening Cream\n@SKIN1004 US Madagascar Centella Poremizing Quick Clay Stick Mask \n\n#worththemoney #koreanskincare #worthit #skincaretips #sensitiveskin "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
         "plays": 2100000,
         "likes": 230000,
         "hashtags": [
@@ -552,76 +511,110 @@
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 168200,
-        "likes": 20000,
-        "hashtags": [
-          "yunjinlipcombo",
-          "mutedlip",
-          "mutedmakeup",
-          "romandcreamshell",
-          "kbeauty"
-        ],
-        "text": "In yunjin we trust #yunjinlipcombo #mutedlip #mutedmakeup #romandcreamshell #kbeauty "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 830100,
-        "likes": 28900,
-        "hashtags": [
-          "keratosispilaris",
-          "skincare",
-          "koreanskincare",
-          "kbeauty"
-        ],
-        "text": "Say goodbye to Keratosis Pilaris! ✨ #keratosispilaris #skincare #koreanskincare #kbeauty "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 1500000,
-        "likes": 64400,
+        "plays": 430000,
+        "likes": 2541,
         "hashtags": [
           "",
-          "skincare",
+          "pimple",
+          "teatree",
           "koreanskincare",
-          "medicube",
           "kbeauty",
-          "glowingskin"
+          "tiktokmademebuyit"
         ],
-        "text": "Korean skincare stays 10 steps ahead 👀✨\n\n@medicube global PDRN Collagen Gua Sha Neck Wrinkle Cream \n\n#skincare #koreanskincare #medicube #kbeauty #glowingskin"
+        "text": "From Painful Bump → almost gone in 7days🫢\n👉🏻@IUNIK - Tea Tree Relief Serum\n\n#pimple #teatree #koreanskincare #kbeauty #tiktokmademebuyit "
       },
       {
         "platform": "tiktok",
         "keyword": "kbeauty",
-        "plays": 172000,
-        "likes": 31700,
-        "hashtags": [
-          "grwm",
-          "korean",
-          "kbeauty"
-        ],
-        "text": "#GRWM #KOREAN #kbeauty "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "kbeauty",
-        "plays": 395,
-        "likes": 29,
+        "plays": 17100000,
+        "likes": 979600,
         "hashtags": [
           "",
-          "giveaway",
-          "kbeauty",
+          "",
           "koreanskincare",
-          "koreanbeauty"
+          "kbeautyskincare",
+          "arencia",
+          "sephora",
+          "sephorahaul"
         ],
-        "text": "🎁 K-BEAUTY GIVEAWAY TIME! 💖\n\nI’m so excited to gift some of my absolute favorite skincare & beauty goodies to one of you! Here’s how to enter:\n\n✨ HOW TO ENTER: Comment below with your answers to these 3 questions: \n1️⃣ When did you start following me? \n2️⃣ What’s your favorite topic I cover? \n3️⃣ What topic do you want to see more of in the future?\n\n📌 RULES & DETAILS:\n* Eligibility: Open to US residents only for this round (international girlies, don't worry ;) global giveaways are coming soon! 🌍✨)\n* Deadline: Entries close on Sunday, August 9, at 11:59 PM PT\n* Winner Announcement: I will announce the winner on my TikTok Story after it closes and DM the winner directly from THIS account!\n* 🎬 Bonus: If you win and post an unboxing video on your page, tag meeee I’d love to see it!\n\n⚠️ SAFETY WARNING: Please watch out for fake/scam accounts! I will NEVER ask for your credit card information, bank details, or ask you to click external links to claim a prize.\n\nDisclaimer: This giveaway is hosted solely by me and is not sponsored, endorsed, administered by, or associated with TikTok. Void where prohibited.\n\nGood luck!! 💕 \n\nthis is the creator im talking about!!: @Monica Ravi-Conway \n\n#giveaway #kbeauty #koreanskincare  #koreanbeauty "
+        "text": "Finally finished giant @Arencia mochi cleanser🍡✨ restocking @sephora 🤭 so much kbeauty at Sephora now!!! #koreanskincare #kbeautyskincare #arencia #sephora #sephorahaul "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 129100,
+        "likes": 11700,
+        "hashtags": [
+          "kbeauty",
+          "kpopmakeup",
+          "koreanmakeup",
+          "idolmakeup",
+          "romand"
+        ],
+        "text": "K-pop idol makeup artists all time favourite products! ✨ \n#kbeauty #kpopmakeup #koreanmakeup #idolmakeup #romand "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 1800000,
+        "likes": 147400,
+        "hashtags": [
+          "mutedbrownmakeup",
+          "kbeauty",
+          "koreanmakeup",
+          "viraltransition",
+          "makeupfyp"
+        ],
+        "text": "It took me some time to actually archive this look but I filmed EVERYTHING this time #mutedbrownmakeup #kbeauty #koreanmakeup #viraltransition #makeupfyp "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 16500000,
+        "likes": 1200000,
+        "hashtags": [
+          "",
+          "abib",
+          "nightroutine",
+          "kbeautyskincare",
+          "skincarehacks",
+          "skincaretipsforyou"
+        ],
+        "text": "Who hates sticky skincare?😂\n\nProduct from @Abib Cosmetics \n✨Barrier jelly overnight sleeping mask\n✨Dark spot collagen Wrapping mask \n\n#abib #nightroutine #kbeautyskincare #skincarehacks #skincaretipsforyou "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 44500,
+        "likes": 1300,
+        "hashtags": [
+          "kbeauty",
+          "stylekorean",
+          "yesstyle",
+          "stylevana",
+          "skincareroutine"
+        ],
+        "text": "Це найвигідніший спосіб купити корейську косметику (без підробок)☺️🫰🏻\n#kbeauty #stylekorean #yesstyle #stylevana #skincareroutine "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "kbeauty",
+        "plays": 10700,
+        "likes": 249,
+        "hashtags": [
+          "kbeauty",
+          "kbeautytrends",
+          "koreanskincare",
+          "kbeautyroutine",
+          "asianbeauty"
+        ],
+        "text": "2026 K-Beauty Trends 🫧\n.\n.\n.\n#kbeauty #kbeautytrends #koreanskincare #kbeautyroutine #asianbeauty          "
       },
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 255000,
-        "likes": 22400,
+        "plays": 260100,
+        "likes": 22900,
         "hashtags": [
           "koreanskincare",
           "skintok",
@@ -635,7 +628,7 @@
         "platform": "tiktok",
         "keyword": "korean skincare",
         "plays": 89900,
-        "likes": 6574,
+        "likes": 6579,
         "hashtags": [
           "",
           "",
@@ -650,6 +643,24 @@
           "sensitiveskin"
         ],
         "text": "tested almost every korean skincare and these are the ones I trust for sensitive skin 💎\n\nproducts:\n@Dr.Althea US Stretchfit Calming Pad\n@dear, Klairs Blue Youth EGF Activating Drop\n@REJURAN US Dual Effect Ampoule\n@glow aloe barrier support cream\n@celimax.global Pore+Dark Spot Brightening Cream\n@SKIN1004 US Madagascar Centella Poremizing Quick Clay Stick Mask \n\n#worththemoney #koreanskincare #worthit #skincaretips #sensitiveskin "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "korean skincare",
+        "plays": 447900,
+        "likes": 27800,
+        "hashtags": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "koreanskincare",
+          "skincarerecommendations",
+          "glassskinroutine",
+          "bestskincare"
+        ],
+        "text": "My top 5 (FAVORITE) Korean skincare products, updated for 2026!\n\n@SKIN1004 US @imfrom_us @House of Hur US @anua_global @IUNIK \n\n#koreanskincare #skincarerecommendations #glassskinroutine #bestskincare "
       },
       {
         "platform": "tiktok",
@@ -669,22 +680,6 @@
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 548200,
-        "likes": 48400,
-        "hashtags": [
-          "",
-          "",
-          "dearklairs",
-          "klairsEGFSerum",
-          "koreanskincare",
-          "kbeauty",
-          "yesstyle"
-        ],
-        "text": "How to fix acne spots \n\nIf you have acne spots and sensitive & teenager! Try this! \n\nThis is partnered with @dear, Klairs @YesStyle \n\n#dearklairs, #klairsEGFSerum, #koreanskincare, #kbeauty, #yesstyle\n\nYesStyle Mega Sale until June 6th, use code ♥️\n\n✅YESSASA15– 15% off (no minimum, valid for 72 hours)\n\n✅YSSASA – 12% off (valid for 1 month)"
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "korean skincare",
         "plays": 2230,
         "likes": 31,
         "hashtags": [
@@ -699,33 +694,7 @@
       {
         "platform": "tiktok",
         "keyword": "korean skincare",
-        "plays": 3400000,
-        "likes": 252800,
-        "hashtags": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "koreanskincare",
-          "koreanskincareproducts",
-          "kbeauty",
-          "kbeautyskincare",
-          ""
-        ],
-        "text": "REAL POPULAR SKINCARE in korea ! ! ! my real experience living in korea and @올리브영 OLIVE YOUNG & @hwahae.global ! I wrote all products below ( of course no ad no money real real 😆😆) \n\nCLEANSER\n@beplain 비플레인 Mung Bean pH-Balanced Cleansing Foam\n(@BANILA CO zero cleansing balm, @manyo US soybean cleansing oil popular too)\ntoner\n@ROUND LAB 1025 dokdo toner\n(torriden dive in toner popular too)\n\nSERUM\n@𝗧𝗼𝗿𝗿𝗶𝗱𝗲𝗻 토리든 dive in hyaluronic serum\n@Innisfreeofficial vitamin c green tea serum \n(innisfreee retinol cica serum also popular)\n(@anua_global pdrn hyaluronic serum popular too)\n\nMOiSTURIZER\n@Dr.G 닥터지 blemish cream\n@S.NATURE aqua squalane moisturizer\n@aestura_us atobarrier 365 cream\n\n#koreanskincare #koreanskincareproducts #kbeauty #kbeautyskincare @Brute Choi 🧿 "
-      },
-      {
-        "platform": "tiktok",
-        "keyword": "korean skincare",
-        "plays": 273600,
+        "plays": 273900,
         "likes": 17700,
         "hashtags": [
           "porecare",
@@ -736,50 +705,78 @@
           ""
         ],
         "text": "How to fix elongated pore \n\n#porecare #koreanskincare #skincare #enlargedpore #poretreatment \n\nThis is partnered with @mixsoon_official @mixsoon global "
+      },
+      {
+        "platform": "tiktok",
+        "keyword": "korean skincare",
+        "plays": 2900000,
+        "likes": 272800,
+        "hashtags": [
+          "koreanskincare",
+          "glowuptips",
+          "pores",
+          "cloggedpores",
+          "koreanskincareproducts"
+        ],
+        "text": "Day 17 | clogged pores 👃🏻\n\n#koreanskincare #glowuptips #pores #cloggedpores #koreanskincareproducts "
       }
     ],
     "youtube": [
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
-        "title": "Korean skincare products + simple routine for beginners (each skin type)",
-        "views": 1270238,
-        "likes": 40000
-      },
-      {
-        "platform": "youtube",
-        "keyword": "korean skincare routine",
-        "title": "skincare routine │ korean skincare, glassy + glowy skin, what i use for acne prone skin",
-        "views": 882233,
-        "likes": 24000
-      },
-      {
-        "platform": "youtube",
-        "keyword": "korean skincare routine",
-        "title": "how to get GLASS skin *for beginners* | affordable skincare routine + best korean skincare products",
-        "views": 1258744,
-        "likes": 34000
+        "title": "My Extremely Simple Daily Skincare (Highly Effective)",
+        "views": 286572,
+        "likes": 9500
       },
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
         "title": "I Tried A 10-Step Korean Skincare Routine For A Month",
-        "views": 9667864,
+        "views": 9667872,
         "likes": 246000
       },
       {
         "platform": "youtube",
         "keyword": "korean skincare routine",
+        "title": "5-Minute KOREAN GLASS SKIN with just 5 Products | Quick & Easy AM/PM  Routine",
+        "views": 24822,
+        "likes": 472
+      },
+      {
+        "platform": "youtube",
+        "keyword": "korean skincare routine",
         "title": "A SIMPLE AM & PM Korean Skincare Routine that ACTUALLY Works for Mature Skin",
-        "views": 39805,
+        "views": 39802,
         "likes": 1600
       },
       {
         "platform": "youtube",
+        "keyword": "korean skincare routine",
+        "title": "how to get GLASS skin *for beginners* | affordable skincare routine + best korean skincare products",
+        "views": 1258872,
+        "likes": 34000
+      },
+      {
+        "platform": "youtube",
         "keyword": "kbeauty haul",
-        "title": "$1000+ VIRAL products haul ★ (kbeauty, skincare, makeup unboxing)",
-        "views": 1084,
-        "likes": 55
+        "title": "HUGE OLIVE YOUNG KOREA HAUL 🍀",
+        "views": 9825,
+        "likes": 410
+      },
+      {
+        "platform": "youtube",
+        "keyword": "kbeauty haul",
+        "title": "KBEAUTY HAUL 🍒💗 new releases from fwee, peripera, lilybyred, colorgram, dasique, etc. at Olive Young",
+        "views": 30686,
+        "likes": 1300
+      },
+      {
+        "platform": "youtube",
+        "keyword": "kbeauty haul",
+        "title": "viral KBEAUTY HAUL ft.yesstyle  🎀 it girl essentials *pinterest inspired* cosrx, romand, etude..etc",
+        "views": 264590,
+        "likes": 9600
       },
       {
         "platform": "youtube",
@@ -791,26 +788,121 @@
       {
         "platform": "youtube",
         "keyword": "kbeauty haul",
-        "title": "HUGE OLIVE YOUNG KOREA HAUL 🍀",
-        "views": 9812,
-        "likes": 408
-      },
-      {
-        "platform": "youtube",
-        "keyword": "kbeauty haul",
-        "title": "$300 YESSTYLE k-beauty haul; brand new releases & viral products",
-        "views": 97468,
-        "likes": 3200
-      },
-      {
-        "platform": "youtube",
-        "keyword": "kbeauty haul",
-        "title": "$300 aesthetic makeup skincare haul 🩰🎀༘ kbeauty cbeauty unboxing ⭑ | rom&nd, judydoll, dasique,etc",
-        "views": 24623,
-        "likes": 780
+        "title": "$1000+ VIRAL products haul ★ (kbeauty, skincare, makeup unboxing)",
+        "views": 1084,
+        "likes": 55
       }
     ],
-    "x": [],
+    "x": [
+      {
+        "platform": "x",
+        "keyword": "kbeauty",
+        "text": "#pr #JOYIQ #バームトゥフォーム #レチナールクレンザー #クレンジングバーム #クレンジング #洗顔 #KBeauty",
+        "likes": 0,
+        "retweets": 0,
+        "hashtags": [
+          "pr",
+          "JOYIQ",
+          "バームトゥフォーム",
+          "レチナールクレンザー",
+          "クレンジングバーム",
+          "クレンジング",
+          "洗顔",
+          "KBeauty"
+        ]
+      },
+      {
+        "platform": "x",
+        "keyword": "kbeauty",
+        "text": "Chicxs, saquen captura! 📸 Mis códigos actualizados de YesStyle para todo este 2026. Skincare coreano con descuento combinando los códigos de la imagen",
+        "likes": 0,
+        "retweets": 0,
+        "hashtags": [
+          "yesstylecodes",
+          "yesstyle",
+          "skincarecoreano",
+          "kbeauty",
+          "descuentos",
+          "Chile"
+        ]
+      },
+      {
+        "platform": "x",
+        "keyword": "kbeauty",
+        "text": "Tu cherches une alternance en ecom, digital, création de contenu, rs, ads… sur Lyon dans la cosmétique. Cette annonce est pour toi 👇🏻 \n\n#ecom #alterna",
+        "likes": 0,
+        "retweets": 0,
+        "hashtags": [
+          "ecom",
+          "alternance",
+          "kbeauty"
+        ]
+      },
+      {
+        "platform": "x",
+        "keyword": "kbeauty",
+        "text": "是非チェックしてみてね〜✅\n\nhttps://t.co/YQ1lYGYkp8\n\n#JOYIQ #バームトゥフォーム #レチナールクレンザー #クレンジングバーム #クレンジング #洗顔 #KBeauty",
+        "likes": 1,
+        "retweets": 0,
+        "hashtags": [
+          "JOYIQ",
+          "バームトゥフォーム",
+          "レチナールクレンザー",
+          "クレンジングバーム",
+          "クレンジング",
+          "洗顔",
+          "KBeauty"
+        ]
+      },
+      {
+        "platform": "x",
+        "keyword": "kbeauty",
+        "text": "Ang tagal ko na ‘to ginegatekeep. I get my kbeauty makeups from these shops. Authentic and super affordable! Nilalagay din nila kung kelan expiration ",
+        "likes": 4,
+        "retweets": 2,
+        "hashtags": []
+      },
+      {
+        "platform": "x",
+        "keyword": "kbeauty",
+        "text": "One swipe of the Benton Guava Toner Pad delivers a burst of hydration, leaving skin feeling plump, refreshed, and ready for everything that follows 💜\n",
+        "likes": 0,
+        "retweets": 0,
+        "hashtags": [
+          "Benton",
+          "GuavaGlow",
+          "HydratingTonerPad",
+          "KBeauty",
+          "GlowRoutine"
+        ]
+      },
+      {
+        "platform": "x",
+        "keyword": "kbeauty",
+        "text": "A complete at home facial routine! #kbeauty \n\nhttps://t.co/evuapBlQ03 https://t.co/wKdfODqQqT",
+        "likes": 1,
+        "retweets": 0,
+        "hashtags": [
+          "kbeauty"
+        ]
+      },
+      {
+        "platform": "x",
+        "keyword": "kbeauty",
+        "text": "メイク落としが簡単に出来て最後は水で濡らして泡立てて洗顔フォームとしても使える優れもの🫶\n\n日本初上陸のこちらQoo10で買えます\n-`🛍𓂃𓈒𓏸︎︎︎︎\n【https://t.co/jxNthnFd2v】\n\n#JOYIQ #バームトゥフォーム #レチナールクレンザー #クレンジングバーム #クレンジ",
+        "likes": 0,
+        "retweets": 0,
+        "hashtags": [
+          "JOYIQ",
+          "バームトゥフォーム",
+          "レチナールクレンザー",
+          "クレンジングバーム",
+          "クレンジング",
+          "洗顔",
+          "KBeauty"
+        ]
+      }
+    ],
     "amazon": [
       {
         "platform": "amazon",
