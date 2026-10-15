@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T04:06:15.739945+00:00",
+  "summary": {
+    "total_keywords": 0,
+    "platforms": 8,
+    "where_to_buy_search": 0
+  },
+  "platforms": {
+    "instagram": {
+      "total": 0,
+      "top_hashtags": []
+    },
+    "tiktok": {
+      "total": 0,
+      "top_keywords": []
+    },
+    "youtube": {
+      "total": 0,
+      "top_keywords": []
+    },
+    "x": {
+      "total": 0,
+      "top_hashtags": []
+    },
+    "amazon": {
+      "total": 0,
+      "top_keywords": []
+    },
+    "google_trends": {
+      "total": 0,
+      "keywords": []
+    },
+    "xiaohongshu": {
+      "total": 0,
+      "top_keywords": [
+        "kbeauty",
+        "korean skincare",
+        "Anua",
+        "Cosrx"
+      ],
+      "brand_mentions": []
+    },
+    "reddit": {
+      "total": 0,
+      "subreddits": [
+        "SkincareAddiction",
+        "AsianBeauty",
+        "kbeauty"
+      ]
+    }
+  },
+  "brands": [],
+  "ingredients": [],
+  "signals": [
+    {
+      "type": "sig-social",
+      "badge": "소셜",
+      "text": "데이터 수집 중 — 잠시 후 업데이트됩니다",
+      "dday": "-"
+    }
+  ],
+  "heatmap": [],
+  "region_brands": {
+    "us": [],
+    "eu": [],
+    "me": [],
+    "zh": [],
+    "sea": []
+  },
+  "gap_brands": {
+    "us": [],
+    "eu": [],
+    "me": [],
+    "zh": [],
+    "sea": []
+  },
+  "influencers": {},
+  "region_info": {
+    "us": {
+      "flag": "🇺🇸",
+      "title": "미주 — 미국 / 캐나다",
+      "sub": "TikTok 트렌드 진원지 · K-뷰티 최대 시장",
+      "priority": "주력"
+    },
+    "eu": {
+      "flag": "🇬🇧",
+      "title": "유럽 — 영국 / 프랑스 / 독일",
+      "sub": "클린뷰티 민감 · EU 규제 인식 높음",
+      "priority": "주력"
+    },
+    "me": {
+      "flag": "🌙",
+      "title": "중동 — UAE / 사우디 / 쿠웨이트",
+      "sub": "할랄 인증 중요 · 럭셔리 선호",
+      "priority": "주력"
+    },
+    "zh": {
+      "flag": "🇨🇳",
+      "title": "중화권 — 싱가포르 / 홍콩 / 대만",
+      "sub": "샤오홍슈 중심 · 왕훙 인플루언서",
+      "priority": "주력"
+    },
+    "sea": {
+      "flag": "🌏",
+      "title": "동남아 — 태국 / 베트남 / 말레이시아",
+      "sub": "K-팝 연동 강함 · 가성비 민감",
+      "priority": "주력"
+    }
+  },
+  "raw": {
+    "instagram": [],
+    "tiktok": [],
+    "youtube": [],
+    "x": [],
+    "amazon": [],
+    "xiaohongshu": [],
+    "reddit": [],
+    "google": []
+  }
+}
