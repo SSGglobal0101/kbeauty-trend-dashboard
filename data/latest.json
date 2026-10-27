@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-26",
-  "generated_at": "2026-10-26T04:12:11.187966+00:00",
+  "date": "2026-10-27",
+  "generated_at": "2026-10-27T04:31:33.711815+00:00",
   "summary": {
     "total_keywords": 0,
     "platforms": 8,
@@ -61,21 +61,15 @@
     }
   ],
   "heatmap": [],
-  "region_brands": {
+  "region_brands": {},
+  "gap_brands": {},
+  "influencers": {
     "us": [],
     "eu": [],
     "me": [],
     "zh": [],
     "sea": []
   },
-  "gap_brands": {
-    "us": [],
-    "eu": [],
-    "me": [],
-    "zh": [],
-    "sea": []
-  },
-  "influencers": {},
   "region_info": {
     "us": {
       "flag": "🇺🇸",
