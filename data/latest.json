@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-27",
-  "generated_at": "2026-11-27T07:45:56.245454+00:00",
+  "date": "2026-11-28",
+  "generated_at": "2026-11-28T07:14:31.691672+00:00",
   "summary": {
     "total_keywords": 0,
     "platforms": 8,
@@ -63,13 +63,7 @@
   "heatmap": [],
   "region_brands": {},
   "gap_brands": {},
-  "influencers": {
-    "us": [],
-    "eu": [],
-    "me": [],
-    "zh": [],
-    "sea": []
-  },
+  "influencers": {},
   "region_info": {
     "us": {
       "flag": "🇺🇸",
